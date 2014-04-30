@@ -439,4 +439,7 @@
     <string name="recents_clear_all_location_bottom_center">Внизу по центру</string>
     <string name="recents_clear_all_dismiss_all_title">Очищать все задачи</string>
     <string name="recents_clear_all_dismiss_all_summary">Очищать все задачи или игнорировать текущую</string>
+
+    <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
+    <string name="bluetooth_accept_all_files">Принимать все типы файлов</string>
 </resources>
