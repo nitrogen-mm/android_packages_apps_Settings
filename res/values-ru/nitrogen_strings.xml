@@ -431,4 +431,7 @@
 
     <string name="status_bar_notif_count_title">Счётчик уведомлений</string>
     <string name="status_bar_notif_count_summary">Показывать количество новых уведомлений в строке состояния</string>
+
+    <string name="unlock_scramble_pin_layout_title">Перемешивать кнопки</string>
+    <string name="unlock_scramble_pin_layout_summary">Переставлять кнопки ввода PIN-кода в случайном порядке</string>
 </resources>
