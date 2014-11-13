@@ -617,4 +617,36 @@
     <string name="power_menu_bug_report_title">Отчет об ошибке</string>
     <string name="power_menu_sound_title">Звуковая панель</string>
     <string name="power_menu_bug_report_disabled">Отчет об ошибке отключен в настройках для разработчика</string>
+
+    <!-- Blacklist preferences -->
+    <string name="blacklist_title">Чёрный список</string>
+    <string name="blacklist_edit_dialog_title">Редактировать чёрный список</string>
+    <string name="blacklist_prefs">Настройки</string>
+    <string name="blacklist_button_delete">Удалить</string>
+    <string name="blacklist_empty_text">Чёрный список пуст. Добавлять контакты можно с помощью кнопки «Добавить (+)».</string>
+    <string name="blacklist_disabled_empty_text">Для автоматического отклонения звонков и сообщений от указанных абонентов включите «Чёрный список».</string>
+    <string name="blacklist_summary_disabled">Выключен</string>
+    <string name="blacklist_summary">Автоматически отклонять звонки и сообщения от указанных абонентов</string>
+    <string name="blacklist_notify">Показывать уведомления</string>
+    <string name="blacklist_private_numbers_title">Скрытые номера</string>
+    <string name="blacklist_private_numbers_summary_disabled">Не блокировать вызовы от скрытых номеров</string>
+    <string name="blacklist_private_numbers_summary">Блокировать входящие <xliff:g id="type">%s</xliff:g> от скрытых номеров</string>
+    <string name="blacklist_unknown_numbers_title">Неизвестные номера</string>
+    <string name="blacklist_unknown_numbers_summary_disabled">Не блокировать входящие вызовы от номеров не из списка контактов</string>
+    <string name="blacklist_unknown_numbers_summary">Блокировать входящие <xliff:g id="type">%s</xliff:g> от номеров не из списка контактов</string>
+    <string name="blacklist_summary_type_calls_only">вызовы</string>
+    <string name="blacklist_summary_type_messages_only">сообщения</string>
+    <string name="blacklist_summary_type_calls_and_messages">вызовы и сообщения</string>
+    <string name="blacklist_regex_title">Регулярные выражения</string>
+    <string name="blacklist_regex_summary">Используйте «.» как маску и «*» для повторения. Например, выражение «123.*» будет блокировать номера, начинающиеся с «123», а «.*123.*» — номера, содержащие «123» в любой части</string>
+    <string name="blacklist_policy_block_calls">Блокировать входящие вызовы</string>
+    <string name="blacklist_policy_block_messages">Блокировать входящие сообщения</string>
+    <string name="blacklist_bad_number_add">Некорректный номер, добавление невозможно</string>
+    <string name="remove_blacklist_number_title">Удалить номер</string>
+    <string name="remove_blacklist_entry">Вы действительно хотите удалить данный номер из чёрного списка?</string>
+    <string name="select_contact">Выбор контакта</string>
+
+    <!-- Privacy Settings Header item -->
+    <string name="privacy_settings_cyanogenmod_title">Конфиденциальность</string>
+    <string name="app_ops_summary">Контроль доступа для приложений</string>
 </resources>

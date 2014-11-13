@@ -98,7 +98,7 @@
                 android:id="@+id/nitrogen_settings"
                 android:title="@string/nitrogen_settings_title"
                 android:fragment="com.android.settings.nitrogen.NitrogenSettings" 
-        		android:icon="@drawable/ic_settings_nitrogen" />
+                android:icon="@drawable/ic_settings_nitrogen" />
 
         <!-- BitSyko Layers -->
         <dashboard-tile
@@ -110,13 +110,6 @@
                 android:targetPackage="com.lovejoy777.rroandlayersmanager"
                 android:targetClass="com.lovejoy777.rroandlayersmanager.menu" />
         </dashboard-tile>
-
-        <!-- App Ops -->
-        <dashboard-tile
-                android:id="@+id/app_ops"
-                android:title="@string/app_ops_settings"
-                android:fragment="com.android.settings.applications.AppOpsSummary"
-                android:icon="@drawable/ic_settings_appops" />
 
         <!-- Kernel Auditor -->
         <dashboard-tile
@@ -139,6 +132,13 @@
                     android:targetPackage="eu.chainfire.supersu"
                     android:targetClass="eu.chainfire.supersu.MainActivity" />
         </dashboard-tile>
+
+        <!-- Blacklist and App Ops -->
+        <dashboard-tile
+                android:id="@+id/privacy_settings_cyanogenmod"
+                android:title="@string/privacy_settings_cyanogenmod_title"
+                android:fragment="com.android.settings.cyanogenmod.PrivacySettings"
+                android:icon="@drawable/ic_settings_appops" />
     </dashboard-category>
 
     <!-- DEVICE -->
