@@ -552,5 +552,5 @@
     <string name="hardware_keys_action_in_app_search">Поиск в приложении</string>
     <string name="hardware_keys_action_launch_camera">Запуск камеры</string>
     <string name="hardware_keys_action_sleep">Выключить экран</string>
-
+    <string name="hardware_keys_action_last_app">Последнее приложение</string>
 </resources>
