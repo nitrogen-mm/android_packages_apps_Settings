@@ -837,4 +837,7 @@
 
     <!-- Charging vibration -->
     <string name="charging_vibration_title">Вибрация при подкл. зарядки</string>
+
+    <!-- Volume settings - Volume adjustment sound -->
+    <string name="volume_adjust_sounds_title">Звук при регулировке громкости</string>
 </resources>
