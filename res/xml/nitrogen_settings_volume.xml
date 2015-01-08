@@ -12,6 +12,8 @@
         android:summary="@string/volume_rocker_wake_summary"
         android:title="@string/volume_rocker_wake_title" />
 
+    </PreferenceCategory>
+
     <PreferenceCategory
          android:key="category_media_options"
          android:title="@string/display_category_media_options_title" >

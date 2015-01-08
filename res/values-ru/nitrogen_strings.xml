@@ -492,4 +492,8 @@
     <!-- Volume Keys Media Control -->
     <string name="volume_keys_control_media_stream">Управление мультимедиа</string>
     <string name="volume_keys_control_media_stream_summary">Клавиши громкости управляют громкостью мультимедиа вместо громкости уведомлений</string>
+
+    <!-- Linked / unlinked notification volume -->
+    <string name="link_volume_option_title">Связать громкости звонка и уведомлений</string>
+    <string name="notification_volume_option_title">Громкость уведомлений</string>
 </resources>
