@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.chroma;
+package com.android.settings.nitrogen;
 
 import com.android.internal.logging.MetricsLogger;
 
@@ -95,7 +95,7 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
             prefSet.removeAll();
         }
 
-        addPreferencesFromResource(R.xml.chroma_settings_clock);
+        addPreferencesFromResource(R.xml.nitrogen_settings_clock);
         prefSet = getPreferenceScreen();
 
         PackageManager pm = getPackageManager();
