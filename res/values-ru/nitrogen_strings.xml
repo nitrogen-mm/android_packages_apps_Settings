@@ -121,7 +121,7 @@
     <string name="default_time">Средне</string>
     <string name="custom_time">Своё время</string>
     <string name="dialog_delete_title">Удалить</string>
-    <string name="dialog_delete_message">УДалить выбранный элемент?</string>
+    <string name="dialog_delete_message">Удалить выбранный элемент?</string>
 
     <!-- Values for the notification light pulse spinners -->
     <string name="pulse_length_always_on">Всегда включен</string>
@@ -194,7 +194,7 @@
     <string name="lockscreen_settings_title">Обои экрана блокировки</string>
     <string name="lockscreen_wallpaper_title">Обои</string>
     <string name="lockscreen_wallpaper_set_title">Установить обои на экран блокировки</string>
-    <string name="lockscreen_wallpaper_clear_title">Очистить обои на экране болкировки</string>
+    <string name="lockscreen_wallpaper_clear_title">Очистить обои на экране блокировки</string>
     <string name="reset_lockscreen_wallpaper">Экран блокировки очищен</string>
 
     <!-- Camera sound switch -->
@@ -402,4 +402,6 @@
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Ответ кнопкой громкости</string>
     <string name="volume_answer_call_summary">Ответ кнопкой увеличения громкости</string>
+
+    <string name="allow_lights_title">Включить индикатор событий в режиме "Не беспокоить"</string>
 </resources>

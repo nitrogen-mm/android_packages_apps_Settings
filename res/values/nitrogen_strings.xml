@@ -401,4 +401,6 @@
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Volume key Answer</string>
     <string name="volume_answer_call_summary">Volume up key Answer</string>
+
+    <string name="allow_lights_title">Allow notification lights in do not disturb mode</string>
 </resources>
