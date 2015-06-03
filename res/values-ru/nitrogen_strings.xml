@@ -525,4 +525,7 @@
     <string name="trigger_bottom_summary">Установите высоту области вызова</string>
     <string name="trigger_width_summary">Установите ширину области вызова</string>
     <string name="trigger_category">Область вызова</string>
+
+    <!-- WiFi auto-configure priorities -->
+    <string name="wifi_auto_config_priorities">Автовыбор приоритета</string>
 </resources>
