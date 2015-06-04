@@ -388,4 +388,8 @@
     <string name="navigation_bar_size_24_dp">24 dp</string>
     <string name="navigation_bar_size_20_dp">20 dp</string>
     <string name="navigation_bar_size_0_dp">0 dp (off)</string>
+
+    <!-- Navbar cursor buttons -->
+    <string name="show_ime_arrows_title">Show arrow keys while typing</string>
+    <string name="show_ime_arrows_summary">Display left and right cursor buttons for IME.</string>
 </resources>
