@@ -467,4 +467,8 @@
     <!-- Show/hide headset icon -->
     <string name="show_headset_icon_title">Показывать значок гарнитуры</string>
     <string name="show_headset_icon_summary">Отобразить значок в строке состояния, когда гарнитура подключена</string>
+
+    <!-- Media ducking -->
+    <string name="interruptions_ignore_while_media_title">Не приглушать звук</string>
+    <string name="interruptions_ignore_while_media_summary">Не снижать громкость воспроизведения мультимедиа при получении уведомлений</string>
 </resources>
