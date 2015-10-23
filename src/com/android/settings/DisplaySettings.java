@@ -58,7 +58,7 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.settings.chroma.DisplayRotation;
+import com.android.settings.nitrogen.DisplayRotation;
 
 import java.util.ArrayList;
 import java.util.List;

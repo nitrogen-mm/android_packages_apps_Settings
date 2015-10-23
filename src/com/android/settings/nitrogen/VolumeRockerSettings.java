@@ -1,4 +1,4 @@
-package com.android.settings.chroma;
+package com.android.settings.nitrogen;
 
 import com.android.internal.logging.MetricsLogger;
 
@@ -36,7 +36,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.chroma_settings_volume);
+        addPreferencesFromResource(R.xml.nitrogen_settings_volume);
 
         mCameraSounds = (SwitchPreference) findPreference(KEY_CAMERA_SOUNDS);
         mCameraSounds.setChecked(SystemProperties.getBoolean(PROP_CAMERA_SOUND, true));

@@ -1,4 +1,4 @@
-package com.android.settings.chroma;
+package com.android.settings.nitrogen;
 
 import com.android.internal.logging.MetricsLogger;
 
@@ -23,7 +23,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.chroma_settings_navigation);
+        addPreferencesFromResource(R.xml.nitrogen_settings_navigation);
 
         // kill-app long press back
         mKillAppLongPressBack = (SwitchPreference) findPreference(KILL_APP_LONGPRESS_BACK);

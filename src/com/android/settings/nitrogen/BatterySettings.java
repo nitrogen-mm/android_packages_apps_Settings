@@ -13,7 +13,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.android.settings.chroma;
+package com.android.settings.nitrogen;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
@@ -49,7 +49,7 @@ public class BatterySettings extends SettingsPreferenceFragment
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.chroma_settings_battery);
+        addPreferencesFromResource(R.xml.nitrogen_settings_battery);
 
         ContentResolver resolver = getActivity().getContentResolver();
 

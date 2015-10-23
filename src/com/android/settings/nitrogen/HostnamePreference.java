@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.chroma;
+package com.android.settings.nitrogen;
 
 import android.content.Context;
 import android.os.SystemProperties;

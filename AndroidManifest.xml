@@ -151,7 +151,7 @@
 		<category android:name="android.intent.category.DEFAULT" />
 		</intent-filter>
 		<meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-		android:value="com.android.settings.chroma.DisplayRotation" />
+		android:value="com.android.settings.nitrogen.DisplayRotation" />
 		<meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/display_settings" />
 	</activity>
@@ -2437,7 +2437,7 @@
         </activity>
 
         <!-- BUILD TWEAKS START -->
-        <activity android:name=".chroma.ChromaSettings" />
+        <activity android:name=".nitrogen.NitrogenSettings" />
         <!-- BUILD TWEAKS END -->
 
         <activity android:name=".notificationlight.NotificationLightSettings" />

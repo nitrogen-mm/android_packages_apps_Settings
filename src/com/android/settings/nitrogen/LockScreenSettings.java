@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.android.settings.chroma;
+package com.android.settings.nitrogen;
 
 import com.android.internal.logging.MetricsLogger;
 
@@ -43,7 +43,7 @@ public class LockScreenSettings extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.chroma_settings_lockscreen);
+        addPreferencesFromResource(R.xml.nitrogen_settings_lockscreen);
 
         mSetWallpaper = (Preference) findPreference(KEY_WALLPAPER_SET);
         mClearWallpaper = (Preference) findPreference(KEY_WALLPAPER_CLEAR);

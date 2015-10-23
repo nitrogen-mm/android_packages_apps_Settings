@@ -84,7 +84,7 @@
 
         <PreferenceScreen
                 android:key="display_rotation"
-                android:fragment="com.android.settings.chroma.DisplayRotation"
+                android:fragment="com.android.settings.nitrogen.DisplayRotation"
                 android:title="@string/display_rotation_title" />
 
         <PreferenceScreen

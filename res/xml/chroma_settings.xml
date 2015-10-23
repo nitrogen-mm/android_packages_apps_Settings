@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/chroma_settings_title" >
+    android:title="@string/nitrogen_settings_title" >
 
     <PreferenceScreen
-        android:key="about_chroma"
-        android:fragment="com.android.settings.chroma.ChromaAbout"
-        android:title="@string/chroma_menu_about" />
+        android:key="about_nitrogen"
+        android:fragment="com.android.settings.nitrogen.NitrogenAbout"
+        android:title="@string/nitrogen_menu_about" />
 
     <PreferenceCategory
-        android:key="category_chroma_personalization"
-        android:title="@string/chroma_menu_personalizaton" >
+        android:key="category_nitrogen_personalization"
+        android:title="@string/nitrogen_menu_personalizaton" >
 
     <PreferenceScreen
         android:key="status_bar_general_category"
-        android:fragment="com.android.settings.chroma.StatusBarSettings"
+        android:fragment="com.android.settings.nitrogen.StatusBarSettings"
         android:title="@string/status_bar_screen_title"/>
 
     <PreferenceScreen
         android:key="navigation_bar_general_category"
-        android:fragment="com.android.settings.chroma.NavigationBarSettings"
+        android:fragment="com.android.settings.nitrogen.NavigationBarSettings"
         android:title="@string/navigation_bar_screen_title" />
 
     <PreferenceScreen
         android:key="gestures_general_category"
-        android:fragment="com.android.settings.chroma.GestureSettings"
+        android:fragment="com.android.settings.nitrogen.GestureSettings"
         android:title="@string/gestures_title" />
 
     <PreferenceScreen
         android:key="lock_screen_general_category"
-        android:fragment="com.android.settings.chroma.LockScreenSettings"
+        android:fragment="com.android.settings.nitrogen.LockScreenSettings"
         android:title="@string/lockscreen_title" />
 <!--
     <PreferenceScreen
@@ -38,7 +38,7 @@
 -->
     <PreferenceScreen
         android:key="volume_rocker_general_category"
-        android:fragment="com.android.settings.chroma.VolumeRockerSettings"
+        android:fragment="com.android.settings.nitrogen.VolumeRockerSettings"
         android:title="@string/volume_rocker_screen_title" />
 </PreferenceCategory>
 </PreferenceScreen>

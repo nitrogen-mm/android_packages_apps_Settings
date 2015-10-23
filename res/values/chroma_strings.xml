@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2015 Chroma
+<!-- Copyright (C) 2015 Nitrogen OS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,16 +15,16 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- BUILD TWEAKS -->
-    <string name="header_category_chroma">Personalization</string>
-    <string name="chroma_settings_title">Chroma</string>
+    <string name="header_category_nitrogen">Personalization</string>
+    <string name="nitrogen_settings_title">Nitrogen OS</string>
 
     <!-- About phone screen, build date of ROM -->
-    <string name="build_date">Chroma build date</string>
+    <string name="build_date">Nitrogen OS build date</string>
     <string name="build_date_default">2015-01-01-0000</string>
 
-    <!-- Chroma Menu -->
-    <string name="chroma_menu_personalizaton">Chroma options</string>
-    <string name="chroma_menu_about">About Chroma</string>
+    <!-- Nitrogen OS Menu -->
+    <string name="nitrogen_menu_personalizaton">Nitrogen OS options</string>
+    <string name="nitrogen_menu_about">About Nitrogen OS</string>
     <string name="status_bar_screen_title">Status bar</string>
     <string name="navigation_bar_screen_title">Navigation bar</string>
     <string name="gestures_title">Gestures</string>
@@ -35,7 +35,7 @@
     <string name="battery_title">Battery</string>
     <string name="battery2_summary">Customize battery icons and percentage</string>
 
-    <!-- Chroma categories -->
+    <!-- Nitrogen OS categories -->
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>
     <string name="display_category_dtts_title">Double tap to sleep</string>
     <string name="display_category_navbar_options_title">Navigation bar options</string>

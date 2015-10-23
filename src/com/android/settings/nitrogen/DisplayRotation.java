@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.chroma;
+package com.android.settings.nitrogen;
 
 import com.android.internal.logging.MetricsLogger;
 

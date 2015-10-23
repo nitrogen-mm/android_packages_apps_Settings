@@ -1,4 +1,4 @@
-package com.android.settings.chroma;
+package com.android.settings.nitrogen;
 
 import com.android.internal.logging.MetricsLogger;
 
@@ -32,7 +32,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.chroma_settings_statusbar);
+        addPreferencesFromResource(R.xml.nitrogen_settings_statusbar);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 

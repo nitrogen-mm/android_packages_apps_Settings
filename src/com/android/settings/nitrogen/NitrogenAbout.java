@@ -1,4 +1,4 @@
-package com.android.settings.chroma;
+package com.android.settings.nitrogen;
 
 import com.android.internal.logging.MetricsLogger;
 
@@ -19,14 +19,14 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-public class ChromaAbout extends SettingsPreferenceFragment implements
+public class NitrogenAbout extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.chroma_about);
+        addPreferencesFromResource(R.xml.nitrogen_about);
     }
 
     @Override

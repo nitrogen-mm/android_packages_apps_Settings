@@ -8,12 +8,12 @@
         android:key="category_dtts_options"
         android:title="@string/display_category_dtts_title" >
 
-    <com.android.settings.chroma.SystemSettingSwitchPreference
+    <com.android.settings.nitrogen.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_to_sleep_title"
         android:summary="@string/double_tap_to_sleep_summary" />
 
-    <com.android.settings.chroma.SystemSettingSwitchPreference
+    <com.android.settings.nitrogen.SystemSettingSwitchPreference
         android:key="double_tap_sleep_navbar"
         android:title="@string/double_tap_sleep_nav_bar_title"
         android:summary="@string/double_tap_sleep_nav_bar_summary"
@@ -25,7 +25,7 @@
         android:key="category_gesture_options"
         android:title="@string/gestures_title" >
 
-        <com.android.settings.chroma.SystemSettingSwitchPreference
+        <com.android.settings.nitrogen.SystemSettingSwitchPreference
                 android:key="three_finger_gesture"
                 android:title="@string/three_finger_gesture"
                 android:summary="@string/three_finger_gesture_summary"

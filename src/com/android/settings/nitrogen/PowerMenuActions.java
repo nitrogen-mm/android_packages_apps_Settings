@@ -1,4 +1,4 @@
-package com.android.settings.chroma;
+package com.android.settings.nitrogen;
 
 import com.android.internal.logging.MetricsLogger;
 
@@ -20,7 +20,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.chroma_settings_power);
+        addPreferencesFromResource(R.xml.nitrogen_settings_power);
     }
 
     @Override
