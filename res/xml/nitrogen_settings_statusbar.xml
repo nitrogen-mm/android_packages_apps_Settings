@@ -24,6 +24,16 @@
         android:entries="@array/quick_pulldown_entries"
         android:entryValues="@array/quick_pulldown_values"
         android:persistent="false" />
+
+    <PreferenceScreen
+        android:key="systemuituner"
+        android:title="@string/systemuituner"
+        android:summary="@string/systemuituner_summary" >
+                 <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.TunerActivity" />
+    </PreferenceScreen>
     </PreferenceCategory>
 
 </PreferenceScreen>
