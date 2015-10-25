@@ -26,6 +26,12 @@
         android:persistent="false" />
 
     <PreferenceScreen
+        android:key="network_traffic_settings"
+        android:title="@string/network_traffic_title"
+        android:fragment="com.android.settings.nitrogen.NetworkTrafficSettings" >
+    </PreferenceScreen>
+
+    <PreferenceScreen
         android:key="systemuituner"
         android:title="@string/systemuituner"
         android:summary="@string/systemuituner_summary" >
