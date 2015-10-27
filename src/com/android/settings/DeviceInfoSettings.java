@@ -77,6 +77,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_NOS_UPDATES = "nos_updates";
+    private static final String KEY_NOS_CHANGELOG = "nos_changelog";
+    private static final String KEY_NOS_LOGO = "nos_logo";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -125,7 +127,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
+        // Nitrogen strings
         findPreference(KEY_NOS_UPDATES).setEnabled(true);
+        findPreference(KEY_NOS_CHANGELOG).setEnabled(true);
+        findPreference(KEY_NOS_LOGO).setEnabled(true);
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
