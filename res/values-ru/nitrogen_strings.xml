@@ -14,6 +14,11 @@
 	 limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- Changelog -->
+	<string name="changelog_title">Список изменений</string>
+	<string name="changelog_summary">С момента последнего обновления</string>
+	<string name="changelog_error">Не удается загрузить список изменений</string>
+	
 	<!-- OTA Updates -->
 	<string name="nosupdate_settings_title">Обновления Nitrogen OS</string>
 
@@ -59,7 +64,7 @@
 	<string name="double_tap_sleep_nav_bar_summary">Двойное нажатие по навигационному бару для сна</string>
 
 	<!-- kill app long press back -->
-	<string name="kill_app_longpress_back">Закрыть приложение кнопкой назал</string>
+	<string name="kill_app_longpress_back">Закрыть приложение кнопкой назад</string>
 	<string name="kill_app_longpress_back_summary">Закрыть приложение долгим нажатием на кнопку назад</string>
 
 	<!-- Volume rocker wake -->
@@ -248,7 +253,7 @@
 	<string name="status_bar_clock_title">Стиль даты и времени</string>
 	<string name="status_bar_clock_summary">Выбрать варианты даты и времени</string> 
 	<string name="clock_styles_summary">Настроить стили часов и формат даты</string>
-	<string name="clock_title_enable">Выравнимание</string>
+	<string name="clock_title_enable">Выравнивание</string>
 	<string name="clock_enabled">Включено</string>
 	<string name="clock_disabled">Отключено</string>
 	<string name="clock_color_title">Цвет</string>
@@ -267,7 +272,7 @@
 	<string name="clock_date_style">Дата</string>
 	<string name="clock_time_style">Время</string>
 	<string name="clock_date_format">Формат даты</string>
-	<string name="clock_date_string_edittext_title">Пример даты и времени MM/dd/yy</string>
+	<string name="clock_date_string_edittext_title">Пример даты и времени ММ/ДД/ГГ</string>
 	<string name="clock_date_string_edittext_summary">Ввести строку</string>
 	<string name="am_pm_clock_normal">Нормальный размер шрифта</string>
 	<string name="am_pm_clock_small">Маленький размер шрифта</string>
@@ -281,4 +286,7 @@
 	<string name="clock_date_format_custom">Свой Java формат</string>
 	<string name="status_bar_clock_style_reset_message">Сбросить цвет часов?</string>
 
+	<!-- Quick Settings brightness slider -->
+	<string name="qs_brightness_slider_title_nos">Ползунок яркости</string>
+	<string name="qs_brightness_slider_summary">Показать ползунок яркости в панели быстрых настроек</string>
 </resources>
