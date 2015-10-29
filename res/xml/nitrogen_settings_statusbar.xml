@@ -24,6 +24,12 @@
         android:key="category_statusbar_options"
         android:title="@string/display_category_statusbar_options_title" >
 
+    <com.android.settings.nitrogen.SecureSettingSwitchPreference
+        android:key="qs_show_brightness_slider"
+        android:title="@string/qs_brightness_slider_title_nos"
+        android:summary="@string/qs_brightness_slider_summary"
+        android:defaultValue="true" />
+
     <ListPreference
         android:key="quick_pulldown"
         android:title="@string/title_quick_pulldown"
