@@ -82,6 +82,12 @@
                 android:entryValues="@array/entryvalues_font_size"
                 android:dialogTitle="@string/dialog_title_font_size" />
 
+        <EditTextPreference
+                android:key="lcd_density"
+                android:title="@string/lcd_density"
+	        android:inputType="number"
+                android:persistent="true" />
+
         <PreferenceScreen
                 android:key="display_rotation"
                 android:fragment="com.android.settings.nitrogen.DisplayRotation"
