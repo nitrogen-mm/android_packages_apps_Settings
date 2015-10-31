@@ -289,4 +289,25 @@
 	<!-- Quick Settings brightness slider -->
 	<string name="qs_brightness_slider_title_nos">Ползунок яркости</string>
 	<string name="qs_brightness_slider_summary">Показать ползунок яркости в панели быстрых настроек</string>
+
+	<!-- Display & Lights screen, setting options for LCD density -->
+	<string name="lcd_density">Плотность экрана</string>
+	<string name="dialog_title_lcd_density">Плотность экрана</string>
+	<string name="lcd_density_value_format">%1$d DPI (по умолчанию: %2$d DPI)</string>
+	<string name="lcd_density_default_value_format">%1$d DPI (по умолчанию)</string>
+	<string name="restarting_ui">Перезапуск интерфейса...</string>
+	<string name="lcd_density_error_msg">Значение должно быть между %1$d и %2$d DPI</string>
+	<string name="lcd_density_dialog_title">Введите значение между %1$d и %2$d DPI</string>
+
+	<!-- QuickSettings: Smart Pulldown -->
+	<string name="smart_pulldown_title">\"Умная\" панель уведомлений</string>
+	<string name="smart_pulldown_summary">Открыть Быстрые настройки при %1$s уведомлениях</string>
+	<string name="smart_pulldown_off">Выкл</string>
+	<string name="smart_pulldown_dismissable">Без удаляемых</string>
+	<string name="smart_pulldown_persistent">Без постоянных</string>
+	<string name="smart_pulldown_all">Без удаляемых и постоянных</string>
+
+	<!-- Battery saver color -->
+	<string name="battery_saver_color_title">Цвет предупреждения</string>
+	<string name="battery_saver_color_summary">Включить оранжевый статус - панели навигации, когда когда включена опция сбережения энергии</string>
 </resources>
