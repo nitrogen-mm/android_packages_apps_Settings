@@ -296,4 +296,9 @@
 
 	<!-- Quick Settings 4 columns -->
 	<string name="qs_four_columns_title">Отображать по четыре плитки в ряду</string>
+
+	<!-- QuickSettings main tiles -->
+	<string name="qs_main_tiles_title">Увеличить первый ряд</string>
+	<string name="qs_main_tiles_summary_on">Две плитки в первом ряду</string>
+	<string name="qs_main_tiles_summary_off">Три или четыре плитки в каждом ряду</string>
 </resources>
