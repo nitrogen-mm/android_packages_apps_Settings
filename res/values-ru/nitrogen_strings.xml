@@ -310,4 +310,16 @@
 	<!-- Battery saver color -->
 	<string name="battery_saver_color_title">Цвет предупреждения</string>
 	<string name="battery_saver_color_summary">Включить оранжевый статус - панели навигации, когда когда включена опция сбережения энергии</string>
+
+	<!-- Quick Settings haptic feedback -->
+	<string name="quick_settings_vibrate_title">Вибрировать при нажатии</string>
+	<string name="quick_settings_vibrate_summary">Вибрация при нажатии на плитку</string>
+
+	<!-- Quick Settings 4 columns -->
+	<string name="qs_four_columns_title">Отображать по четыре плитки в ряду</string>
+
+	<!-- QuickSettings main tiles -->
+	<string name="qs_main_tiles_title">Увеличить первый ряд</string>
+	<string name="qs_main_tiles_summary_on">Две плитки в первом ряду</string>
+	<string name="qs_main_tiles_summary_off">Три или четыре плитки в каждом ряду</string>
 </resources>
