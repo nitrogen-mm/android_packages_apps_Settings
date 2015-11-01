@@ -293,4 +293,7 @@
 	<!-- Quick Settings haptic feedback -->
 	<string name="quick_settings_vibrate_title">Вибрировать при нажатии</string>
 	<string name="quick_settings_vibrate_summary">Вибрация при нажатии на плитку</string>
+
+	<!-- Quick Settings 4 columns -->
+	<string name="qs_four_columns_title">Отображать по четыре плитки в ряду</string>
 </resources>
