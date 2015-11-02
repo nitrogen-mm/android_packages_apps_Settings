@@ -43,6 +43,7 @@
     <string name="nitrogen_misc_category_title">Miscellaneous</string>
     <string name="battery_title">Battery</string>
     <string name="battery2_summary">Customize battery icons and percentage</string>
+    <string name="recents_panel_settings">Recent apps settings</string>
 
     <!-- Nitrogen OS categories -->
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>
@@ -369,6 +370,10 @@
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">CPU</string>
     <string name="mem_info">RAM</string>
+
+    <!-- Show/Hide Search Bar -->
+    <string name="recents_show_searchbar">Enable search bar in recents menu</string>
+    <string name="recents_show_searchbar_summary">Enable/disable the search bar in the recents menu</string>
 
     <!-- Navigation bar -->
     <string name="navigation_bar_category">Navigation bar</string>

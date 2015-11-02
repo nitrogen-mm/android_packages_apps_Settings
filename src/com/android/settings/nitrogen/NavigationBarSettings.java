@@ -21,7 +21,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.android.internal.logging.MetricsLogger;
-import com.android.internal.util.cm.ScreenType;
+import com.android.internal.util.nitrogen.ScreenType;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
@@ -29,7 +29,6 @@ import com.android.settings.R;
 public class NavigationBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
     private static final String PREF_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
     private static final String PREF_NAVIGATION_BAR_HEIGHT_LANDSCAPE = "navigation_bar_height_landscape";
     private static final String PREF_NAVIGATION_BAR_WIDTH = "navigation_bar_width";
@@ -39,7 +38,6 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
     ListPreference mNavigationBarHeightLandscape;
     ListPreference mNavigationBarWidth;
 
-    private SwitchPreference mKillAppLongPressBack;
     private SwitchPreference mStatusBarImeArrows;
 
     @Override
@@ -49,13 +47,6 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.nitrogen_settings_navigation);
 
         PreferenceScreen prefSet = getPreferenceScreen();
-
-        // kill-app long press back
-        mKillAppLongPressBack = (SwitchPreference) findPreference(KILL_APP_LONGPRESS_BACK);
-        mKillAppLongPressBack.setOnPreferenceChangeListener(this);
-        int killAppLongPressBack = Settings.Secure.getInt(getContentResolver(),
-                KILL_APP_LONGPRESS_BACK, 0);
-        mKillAppLongPressBack.setChecked(killAppLongPressBack != 0);
 
         // nav bar cursor
         mStatusBarImeArrows = (SwitchPreference) findPreference(STATUS_BAR_IME_ARROWS);
@@ -130,12 +121,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mKillAppLongPressBack) {
-            boolean value = (Boolean) objValue;
-            Settings.Secure.putInt(getContentResolver(), KILL_APP_LONGPRESS_BACK,
-                    value ? 1 : 0);
-            return true;
-        } else if (preference == mNavigationBarWidth) {
+        if (preference == mNavigationBarWidth) {
             int index = mNavigationBarWidth.findIndexOfValue((String) objValue);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.NAVIGATION_BAR_WIDTH, Integer.parseInt((String) objValue));
