@@ -325,4 +325,9 @@
 	<string name="qs_main_tiles_title">Увеличить первый ряд</string>
 	<string name="qs_main_tiles_summary_on">Две плитки в первом ряду</string>
 	<string name="qs_main_tiles_summary_off">Три или четыре плитки в каждом ряду</string>
+
+	<!-- Force expanded notifications -->
+	<string name="force_expanded_notifications_title">Принудительно развернутое уведомление</string>
+	<string name="force_expanded_notifications_summary">Принудительное развертывание уведомлений для всех приложений, которые это поддерживают</string>
+
 </resources>
