@@ -17,10 +17,10 @@
         android:fragment="com.android.settings.nitrogen.StatusBarSettings"
         android:title="@string/status_bar_screen_title"/>
 
-    <PreferenceScreen
+<!--    <PreferenceScreen
         android:key="navigation_bar_general_category"
         android:fragment="com.android.settings.nitrogen.NavigationBarSettings"
-        android:title="@string/navigation_bar_screen_title" />
+        android:title="@string/navigation_bar_screen_title" /> -->
 
     <PreferenceScreen
         android:key="gestures_general_category"
@@ -40,5 +40,11 @@
         android:key="volume_rocker_general_category"
         android:fragment="com.android.settings.nitrogen.VolumeRockerSettings"
         android:title="@string/volume_rocker_screen_title" />
+
+    <PreferenceScreen
+        android:key="nitrogen_misc_category"
+        android:fragment="com.android.settings.nitrogen.MiscSettings"
+        android:title="@string/nitrogen_misc_category_title" />
+
 </PreferenceCategory>
 </PreferenceScreen>

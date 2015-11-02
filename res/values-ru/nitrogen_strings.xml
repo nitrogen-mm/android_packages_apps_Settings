@@ -39,7 +39,9 @@
 	<string name="lockscreen_title">Экран блокировки</string>
 	<string name="power_menu_title">Меню пистания</string>
 	<string name="volume_rocker_screen_title">Кнопки громкости</string>
-	<string name="volume_rocker_other_title">Разное</string>
+	<string name="volume_rocker_other_title">Другие</string>
+	<string name="nitrogen_misc_category_title">Разные настройки</string>
+
 	<string name="battery_title">Батарея</string>
 	<string name="battery2_summary">Настройка иконки и процента батареи</string>
 
@@ -49,6 +51,7 @@
 	<string name="display_category_navbar_options_title">Опции навигационного бара</string>
 	<string name="display_category_statusbar_options_title">Опции строки состояния</string>
 	<string name="display_category_wakeup_options_title">Опции пробуждения</string>
+	<string name="misc_category_options_title">Разные опции</string>
 
 	<!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
 	<string name="supersu_title">SuperSU</string>
@@ -56,7 +59,7 @@
 	<!-- BitSyko Layers -->
 	<string name="bitsyko_layers">Layers</string>
 
-   <!-- Dev Options Enabled by Default -->
+	<!-- Dev Options Enabled by Default -->
 	<string name="show_dev_already_enabled">Не нужно, настройки для разработчика активированы по умлочанию.</string>
 
 	<!-- Double Tap Navbar to Sleep -->
