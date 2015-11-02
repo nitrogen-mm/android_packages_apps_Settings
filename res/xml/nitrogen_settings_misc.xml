@@ -22,6 +22,11 @@
         android:title="@string/disable_immersive_message_title"
         android:summary="@string/disable_immersive_message_summary" />
 
+    <com.android.settings.nitrogen.SystemSettingSwitchPreference
+        android:key="disable_fc_notifications"
+        android:title="@string/disable_fc_notifications_title"
+        android:summary="@string/disable_fc_notifications_summary"
+        android:defaultValue="false" />
     </PreferenceCategory>
 
 </PreferenceScreen>
