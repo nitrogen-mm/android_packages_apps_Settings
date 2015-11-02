@@ -337,4 +337,8 @@
 	<!-- Disabling FC notifications -->
 	<string name="disable_fc_notifications_title">Отключить FC уведомления</string>
 	<string name="disable_fc_notifications_summary">Это скроет все уведомления о принудительном закрытии</string>
+
+    <!-- About device screen, CPU and RAM info. -->
+    <string name="cpu_info">Информация о процессоре</string>
+    <string name="mem_info">Объём оперативной памяти</string>
 </resources>
