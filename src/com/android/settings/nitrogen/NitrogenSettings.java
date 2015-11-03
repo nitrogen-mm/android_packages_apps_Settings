@@ -18,6 +18,6 @@ public class NitrogenSettings extends SettingsPreferenceFragment {
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.APPLICATION;
+        return MetricsLogger.NITROGEN_SETTINGS;
     }
 }

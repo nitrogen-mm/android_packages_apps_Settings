@@ -45,6 +45,6 @@ public class NitrogenAbout extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.APPLICATION;
+        return MetricsLogger.ABOUT_NITROGEN;
     }
 }

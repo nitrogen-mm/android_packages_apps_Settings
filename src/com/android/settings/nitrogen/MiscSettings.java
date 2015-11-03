@@ -45,6 +45,6 @@ public class MiscSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.APPLICATION;
+        return MetricsLogger.MISC_SETTINGS;
     }
 }

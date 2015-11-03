@@ -90,7 +90,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.APPLICATION;
+        return MetricsLogger.STATUSBAR_SETTINGS;
     }
 
     private void updateQuickPulldownSummary(int value) {

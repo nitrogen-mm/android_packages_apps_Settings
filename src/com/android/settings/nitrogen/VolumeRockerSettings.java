@@ -91,7 +91,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.APPLICATION;
+        return MetricsLogger.VOLUME_SETTINGS;
     }
     private void showDialogInner(int id) {
         DialogFragment newFragment = MyAlertDialogFragment.newInstance(id);
