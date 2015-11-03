@@ -6,6 +6,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.RemoteException;
 import android.os.PowerManager;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
@@ -22,6 +23,7 @@ import android.view.MenuItem;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.util.nitrogen.ScreenType;
+import com.android.settings.nitrogen.KeyDisabler;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
@@ -33,11 +35,13 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
     private static final String PREF_NAVIGATION_BAR_HEIGHT_LANDSCAPE = "navigation_bar_height_landscape";
     private static final String PREF_NAVIGATION_BAR_WIDTH = "navigation_bar_width";
     private static final String STATUS_BAR_IME_ARROWS = "status_bar_ime_arrows";
+    private static final String NAVIGATION_BAR_SHOW = "navigation_bar_show";
 
     ListPreference mNavigationBarHeight;
     ListPreference mNavigationBarHeightLandscape;
     ListPreference mNavigationBarWidth;
 
+    private SwitchPreference mNavigationBarShow;
     private SwitchPreference mStatusBarImeArrows;
 
     @Override
@@ -47,6 +51,10 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.nitrogen_settings_navigation);
 
         PreferenceScreen prefSet = getPreferenceScreen();
+
+        // navigation bar show
+        mNavigationBarShow = (SwitchPreference) findPreference(NAVIGATION_BAR_SHOW);
+        updateDisableNavkeysOption();
 
         // nav bar cursor
         mStatusBarImeArrows = (SwitchPreference) findPreference(STATUS_BAR_IME_ARROWS);
@@ -121,7 +129,12 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mNavigationBarWidth) {
+        if (preference == mNavigationBarShow) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getContentResolver(), NAVIGATION_BAR_SHOW,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mNavigationBarWidth) {
             int index = mNavigationBarWidth.findIndexOfValue((String) objValue);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.NAVIGATION_BAR_WIDTH, Integer.parseInt((String) objValue));
@@ -146,6 +159,49 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             return true;
         }
             return false;
+    }
+
+    private static void writeDisableNavkeysOption(Context context, boolean enabled) {
+        final int defaultBrightness = context.getResources().getInteger(
+                com.android.internal.R.integer.config_buttonBrightnessSettingDefault);
+
+        Settings.System.putInt(context.getContentResolver(),
+                Settings.System.NAVIGATION_BAR_SHOW, enabled ? 1 : 0);
+        KeyDisabler.setActive(enabled);
+
+        if (enabled) {
+            Settings.System.putInt(context.getContentResolver(),
+                    Settings.System.BUTTON_BRIGHTNESS, 0);
+        } else {
+            Settings.System.putInt(context.getContentResolver(),
+                    Settings.System.BUTTON_BRIGHTNESS, defaultBrightness);
+	}
+    }
+
+    private void updateDisableNavkeysOption() {
+        boolean enabled = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.NAVIGATION_BAR_SHOW, 0) != 0;
+
+        mNavigationBarShow.setChecked(enabled);
+    }
+
+    public static void restoreKeyDisabler(Context context) {
+        if (!KeyDisabler.isSupported()) {
+            return;
+        }
+
+        writeDisableNavkeysOption(context, Settings.System.getInt(context.getContentResolver(),
+                Settings.System.NAVIGATION_BAR_SHOW, 0) != 0);
+    }
+
+  @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if (preference == mNavigationBarShow) {
+            writeDisableNavkeysOption(getActivity(), mNavigationBarShow.isChecked());
+            updateDisableNavkeysOption();
+        }
+
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     @Override

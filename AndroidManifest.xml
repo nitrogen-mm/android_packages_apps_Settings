@@ -2595,5 +2595,11 @@
                 android:value="com.android.settings.applications.WriteSettingsDetails" />
         </activity>
 
+        <receiver android:name=".nitrogen.BootReceiver" android:enabled="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
     </application>
 </manifest>
