@@ -370,4 +370,8 @@
     <!-- About device screen, CPU and RAM info. -->
     <string name="cpu_info">Информация о процессоре</string>
     <string name="mem_info">Объём оперативной памяти</string>
+
+     <!-- The volume key answer -->
+    <string name="volume_answer_call_title">Ответ кнопкой громкости</string>
+    <string name="volume_answer_call_summary">Ответ кнопкой увеличения громкости</string>
 </resources>

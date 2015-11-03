@@ -25,11 +25,19 @@
             android:key="category_cursor_options"
             android:title="@string/volume_rocker_other_title">
 
+     <com.android.settings.nitrogen.SystemSettingSwitchPreference
+        android:key="call_volume_answer"
+        android:title="@string/volume_answer_call_title"
+        android:summary="@string/volume_answer_call_summary"
+        android:defaultValue="false" />
+
      <SwitchPreference
         android:key="camera_sounds"
         android:title="@string/camera_sounds_title"
         android:summary="@string/camera_sounds_summary"
         android:defaultValue="true" />
+
+
     </PreferenceCategory>
 
 </PreferenceScreen>
