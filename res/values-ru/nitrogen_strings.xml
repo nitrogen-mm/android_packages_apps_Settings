@@ -48,7 +48,8 @@
     <!-- Nitrogen OS categories -->
     <string name="display_category_batteryclock_options_title">Опции батареи и часов</string>
     <string name="display_category_dtts_title">Двойное нажатие для сна</string>
-    <string name="display_category_navbar_options_title">Опции навигационного бара</string>
+    <string name="display_category_navbar_options_title">Опции панели навигации</string>
+    <string name="display_category_onscreen">Наэкранные кнопки</string>
     <string name="display_category_statusbar_options_title">Опции строки состояния</string>
     <string name="display_category_wakeup_options_title">Опции пробуждения</string>
     <string name="misc_category_options_title">Разные опции</string>
@@ -371,7 +372,34 @@
     <string name="cpu_info">Информация о процессоре</string>
     <string name="mem_info">Объём оперативной памяти</string>
 
-     <!-- The volume key answer -->
+    <!-- Show/Hide Search Bar -->
+    <string name="recents_show_searchbar">Включить панель поиска в меню недавних</string>
+    <string name="recents_show_searchbar_summary">Включить/отключить панель поиска в меню недавних</string>
+
+    <!-- Navigation bar -->
+    <string name="navigation_bar_category">Панель навигации</string>
+    <string name="navbar_enable_bar">Включить</string>
+    <string name="navbar_dimen_title">Размеры</string>
+    <string name="navbar_dimensions_reset_message">Сбросить все размеры панели по умолчанию?</string>
+    <string name="navigation_bar_height_title">Высота панели навигации</string>
+    <string name="navigation_bar_height_landscape_title">Высота панели навигации в ландшафтном режиме</string>
+    <string name="navigation_bar_width_title">Ширина панели навигации</string>
+    <string name="navigation_bar_size_48_dp">48 dp (по умолчанию)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (по умолчанию)</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_32_dp">32 dp</string>
+    <string name="navigation_bar_size_28_dp">28 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_20_dp">20 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (отключено)</string>
+
+    <!-- Navbar cursor buttons -->
+    <string name="show_ime_arrows_title">Показать стрелки во время набора текста</string>
+    <string name="show_ime_arrows_summary">Отобразить левую и правую клавиши курсора для IME.</string>
+
+    <!-- The volume key answer -->
     <string name="volume_answer_call_title">Ответ кнопкой громкости</string>
     <string name="volume_answer_call_summary">Ответ кнопкой увеличения громкости</string>
 </resources>
