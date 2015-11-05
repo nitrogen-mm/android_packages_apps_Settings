@@ -404,4 +404,8 @@
     <string name="volume_answer_call_summary">Ответ кнопкой увеличения громкости</string>
 
     <string name="allow_lights_title">Включить индикатор событий в режиме "Не беспокоить"</string>
+
+    <!-- Whether to display IME switcher notifcation -->
+    <string name="ime_switcher_notify">Значок выбора метода ввода</string>
+    <string name="ime_switcher_notify_summary">Отображать переключатель метода ввода при открытии текстовых полей</string>
 </resources>

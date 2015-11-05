@@ -403,4 +403,8 @@
     <string name="volume_answer_call_summary">Volume up key Answer</string>
 
     <string name="allow_lights_title">Allow notification lights in do not disturb mode</string>
+
+    <!-- Whether to display IME switcher notifcation -->
+    <string name="ime_switcher_notify">Selector notification</string>
+    <string name="ime_switcher_notify_summary">Display input method selector notification</string>
 </resources>
