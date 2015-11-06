@@ -408,4 +408,7 @@
     <!-- Whether to display IME switcher notifcation -->
     <string name="ime_switcher_notify">Значок выбора метода ввода</string>
     <string name="ime_switcher_notify_summary">Отображать переключатель метода ввода при открытии текстовых полей</string>
+
+    <string name="status_bar_notif_count_title">Счётчик уведомлений</string>
+    <string name="status_bar_notif_count_summary">Показывать количество новых уведомлений в строке состояния</string>
 </resources>
