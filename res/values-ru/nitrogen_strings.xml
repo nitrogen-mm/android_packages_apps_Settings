@@ -14,6 +14,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- About Nitrogen -->
+    <string name="nos_about">О Nitrogen OS</string>
+    <string name="nos_website">Сайт Nitrogen OS</string>
+    <string name="nos_github">Nitrogen Project на GitHub</string>
+    <string name="nos_googleplus">Сообщество на Google+</string>
+    <string name="nos_dev1_summary">Главный разработчик</string>
+    <string name="nos_dev2_summary">Разработчик</string>
+    <string name="nos_developers_summary">Разработчик</string>
+    <string name="nos_thanks">Благодарности</string>
+
     <!-- Changelog -->
     <string name="changelog_title">Список изменений</string>
     <string name="changelog_summary">С момента последнего обновления</string>

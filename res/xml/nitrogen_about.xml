@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2015 Nitrogen OS
+<!-- Copyright (C) 2015 Nitrogen Project
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
+
           http://www.apache.org/licenses/LICENSE-2.0
+
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -12,64 +15,80 @@
 -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="About Nitrogen OS"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/nos_about"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-<PreferenceScreen
-    android:title="Donate">
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="http://forum.xda-developers.com/donatetome.php?u=1978554" />
+        <!-- Website -->
+        <PreferenceScreen
+                android:title="@string/nos_website">
+            <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="https://xyyx.ga" />
+        </PreferenceScreen>
+
+        <!-- Github -->
+        <PreferenceScreen
+                android:title="@string/nos_github">
+            <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="https://github.com/nitrogen-project" />
+        </PreferenceScreen>
+
+        <!-- Google Plus -->
+        <PreferenceScreen
+                android:title="@string/nos_googleplus">
+            <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="https://plus.google.com/communities/111037372581335961267" />
+        </PreferenceScreen>
+
+        <!-- Developers -->
+        <PreferenceCategory
+                android:key="category_nitrogen_developers"
+                android:title="@string/nos_developers">
+
+            <Preference
+                    android:title="@string/nos_dev1"
+                    android:summary="@string/nos_dev1_summary"
+                    android:data="https://github.com/xyyx"/>
+
+            <Preference
+                    android:title="@string/nos_dev2"
+                    android:summary="@string/nos_dev2_summary"
+                    android:data="https://github.com/Mr-MEX"/>
+        </PreferenceCategory>
+
+        <!-- Thanks -->
+        <PreferenceCategory
+                android:key="category_nitrogen_thanks"
+                android:title="@string/nos_thanks">
+				
+            <Preference
+                    android:title="@string/nos_thanks1"/>
+            <Preference
+                    android:title="@string/nos_thanks2"/>
+            <Preference
+                    android:title="@string/nos_thanks3"/>
+            <Preference
+                    android:title="@string/nos_thanks4"/>
+            <Preference
+                    android:title="@string/nos_thanks5"/>
+            <Preference
+                    android:title="@string/nos_thanks6"/>
+            <Preference
+                    android:title="@string/nos_thanks7"/>
+            <Preference
+                    android:title="@string/nos_thanks8"/>
+            <Preference
+                    android:title="@string/nos_thanks9"/>
+            <Preference
+                    android:title="@string/nos_thanks10"/>
+            <Preference
+                    android:title="@string/nos_thanks11"/>
+            <Preference
+                    android:title="@string/nos_thanks12"/>
+            <Preference
+                    android:title="@string/nos_thanks13"/>
+        </PreferenceCategory>
 </PreferenceScreen>
-
-<PreferenceScreen
-    android:title="Google+">
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://plus.google.com/communities/100877567555105149232" />
-</PreferenceScreen>
-
-<PreferenceScreen 
-    android:title="Pushbullet">
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://www.pushbullet.com/channel?tag=nitrogen"/>
-</PreferenceScreen>
-
-<PreferenceScreen 
-    android:title="Twitter">
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://www.twitter.com/zephiK0"/>
-</PreferenceScreen>
-
-<PreferenceScreen
-    android:title="Website">
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://zephik.com" />
-</PreferenceScreen>
-
-	<!-- Developers -->
-    <PreferenceCategory
-        android:key="category_nitrogen_developers"
-        android:title="Developers">
-
-    <Preference
-        android:title="zephiK"
-	    android:summary="Lead developer"/>
-    </PreferenceCategory>
-
-	<!-- Honorable mentions -->
-    <PreferenceCategory
-        android:key="category_nitrogen_mentions"
-        android:title="Honorable mentions" >
-    <Preference
-        android:title="hellsgod"
-       	android:summary="hells-Core Kernel base"/>
-    <Preference
-        android:title="jolinnard"
-       	android:summary="Providing web hosting"/>
-    </PreferenceCategory>
-    </PreferenceScreen>

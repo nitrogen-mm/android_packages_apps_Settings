@@ -3,11 +3,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/nitrogen_settings_title" >
 
-<!--    <PreferenceScreen
-        android:key="about_nitrogen"
-        android:fragment="com.android.settings.nitrogen.NitrogenAbout"
-        android:title="@string/nitrogen_menu_about" />	-->
-
     <PreferenceCategory
         android:key="category_nitrogen_personalization"
         android:title="@string/nitrogen_menu_personalizaton" >
