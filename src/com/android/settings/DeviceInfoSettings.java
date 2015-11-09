@@ -21,6 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.ResolveInfo;
 import android.os.Build;
 import android.os.Bundle;
@@ -134,7 +135,18 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
         // Nitrogen strings
-        findPreference(KEY_NOS_UPDATES).setEnabled(true);
+        
+	boolean supported = false;	
+        try {
+        	supported = (getPackageManager().getPackageInfo("com.ota.updates", 0).versionCode >= 0);
+        } catch (PackageManager.NameNotFoundException e) {
+ 
+        } if (!supported) {
+                findPreference(KEY_NOS_UPDATES).setEnabled(false);	
+        } else {
+		findPreference(KEY_NOS_UPDATES).setEnabled(true);
+	}
+
         findPreference(KEY_NOS_CHANGELOG).setEnabled(true);
         findPreference(KEY_NOS_LOGO).setEnabled(true);
 
