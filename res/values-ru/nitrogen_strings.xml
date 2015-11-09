@@ -19,6 +19,7 @@
     <string name="nos_website">Сайт Nitrogen OS</string>
     <string name="nos_github">Nitrogen Project на GitHub</string>
     <string name="nos_googleplus">Сообщество на Google+</string>
+    <string name="nos_developers">Разработчики</string>
     <string name="nos_dev1_summary">Главный разработчик</string>
     <string name="nos_dev2_summary">Разработчик</string>
     <string name="nos_developers_summary">Разработчик</string>
@@ -51,15 +52,16 @@
     <string name="volume_rocker_screen_title">Кнопки громкости</string>
     <string name="volume_rocker_other_title">Другие</string>
     <string name="nitrogen_misc_category_title">Разные настройки</string>
-
     <string name="battery_title">Батарея</string>
     <string name="battery2_summary">Настройка иконки и процента батареи</string>
+    <string name="recents_panel_settings">Настройка недавних приложений</string>
 
     <!-- Nitrogen OS categories -->
     <string name="display_category_batteryclock_options_title">Опции батареи и часов</string>
     <string name="display_category_dtts_title">Двойное нажатие для сна</string>
     <string name="display_category_navbar_options_title">Опции панели навигации</string>
     <string name="display_category_onscreen">Наэкранные кнопки</string>
+    <string name="display_category_lockscreen_options_title">Опции экрана блокировки</string>
     <string name="display_category_statusbar_options_title">Опции строки состояния</string>
     <string name="display_category_wakeup_options_title">Опции пробуждения</string>
     <string name="misc_category_options_title">Разные опции</string>
@@ -409,10 +411,18 @@
     <string name="show_ime_arrows_title">Показать стрелки во время набора текста</string>
     <string name="show_ime_arrows_summary">Отобразить левую и правую клавиши курсора для IME.</string>
 
+    <!-- Navigation bar -->
+    <string name="navigation_bar_buttons">Кнопки и их расположение</string>
+    <string name="navigation_bar_settings_summary">Редактирование и перемещение кнопок панели навигации</string>
+    <string name="navigation_bar_help_text">Для разблокировки панели навигации и начала редактирования коснитесь значка правки.\n\nКоснитесь виртуальной кнопки для изменения функции или удерживайте ее для перемещения.\n\nПосле этого нажмите «Сохранить» для подтверждения изменений или «Восстановить», чтобы вернуть стандартные настройки.</string>
+    <string name="navigation_restore_button_text">Восстановить</string>
+    <string name="navigation_edit_button_text">Изменить</string>
+    <string name="navigation_save_button_text">Сохранить</string>
+    <string name="navigation_bar_reset_message">Удалить текущие настройки и восстановить стандартный набор?</string>
+
     <!-- The volume key answer -->
     <string name="volume_answer_call_title">Ответ кнопкой громкости</string>
     <string name="volume_answer_call_summary">Ответ кнопкой увеличения громкости</string>
-
     <string name="allow_lights_title">Включить индикатор событий в режиме "Не беспокоить"</string>
 
     <!-- Whether to display IME switcher notifcation -->

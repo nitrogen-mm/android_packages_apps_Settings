@@ -37,7 +37,7 @@
     <string name="nos_thanks10">Kevindeving</string>
     <string name="nos_thanks11">Mazda--</string>
     <string name="nos_thanks12">Mahdi-Rom</string>
-    <string name="nos_thanks13">kufikugel</string>
+    <string name="nos_thanks13">cyanogen</string>
 
     <!-- Changelog -->
     <string name="changelog_title">Changelog</string>
@@ -390,7 +390,7 @@
     <string name="disable_immersive_message_summary">This will hide all Immersive Mode Messages</string>
 
     <!-- Disabling FC notifications -->
-    <string name="disable_fc_notifications_title">Diable FC Notifications</string>
+    <string name="disable_fc_notifications_title">Disable FC Notifications</string>
     <string name="disable_fc_notifications_summary">This will hide all force close notificaitons</string>
 
     <!-- About device screen, CPU and RAM info. -->
@@ -428,8 +428,7 @@
     <string name="ok">OK</string>
     <string name="navigation_bar_buttons">Buttons &amp; layout</string>
     <string name="navigation_bar_settings_summary">Edit and rearrange navigation bar buttons</string>
-    <string name="navigation_bar_help_text">To get started tap the edit icon to unlock the navigation bar for editing.\n\nYou can tap an icon to change its shortcut, or long press an icon to re-arrange the layout.\n\nTap save to commit y
-    our changes, or restore to reset the layout to default settings.</string>
+    <string name="navigation_bar_help_text">To get started tap the edit icon to unlock the navigation bar for editing.\n\nYou can tap an icon to change its shortcut, or long press an icon to re-arrange the layout.\n\nTap save to commit your changes, or restore to reset the layout to default settings.</string>
     <string name="navigation_restore_button_text">Restore\ndefaults</string>
     <string name="navigation_edit_button_text">Edit</string>
     <string name="navigation_save_button_text">Save</string>
