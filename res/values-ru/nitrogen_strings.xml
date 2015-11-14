@@ -408,8 +408,8 @@
     <string name="navigation_bar_size_0_dp">0 dp (отключено)</string>
 
     <!-- Navbar cursor buttons -->
-    <string name="show_ime_arrows_title">Показать стрелки во время набора текста</string>
-    <string name="show_ime_arrows_summary">Отобразить левую и правую клавиши курсора для IME.</string>
+    <string name="navigation_bar_arrow_keys_title">Перемещение курсора</string>
+    <string name="navigation_bar_arrow_keys_summary">Отображать кнопки перемещения курсора влево или вправо при вводе. Кнопка выбора метода ввода отображаться не будет.</string>
 
     <!-- Navigation bar -->
     <string name="navigation_bar_buttons">Кнопки и их расположение</string>
