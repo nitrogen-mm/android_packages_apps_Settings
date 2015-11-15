@@ -437,4 +437,7 @@
 
     <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
     <string name="unlock_quick_unlock_control_summary">Автоматическая разблокировка при вводе правильного пароля или PIN-кода</string>
+
+    <!-- Navigation bar button color -->
+    <string name="navbar_button_tint_title">Цвет кнопок</string>
 </resources>

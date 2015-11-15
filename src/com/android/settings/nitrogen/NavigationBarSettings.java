@@ -11,6 +11,7 @@ import android.os.PowerManager;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceFragment;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
@@ -28,9 +29,12 @@ import com.android.settings.nitrogen.KeyDisabler;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
 public class NavigationBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String NAVIGATION_BAR_TINT = "navigation_bar_tint";
     private static final String PREF_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
     private static final String PREF_NAVIGATION_BAR_HEIGHT_LANDSCAPE = "navigation_bar_height_landscape";
     private static final String PREF_NAVIGATION_BAR_WIDTH = "navigation_bar_width";
@@ -40,6 +44,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
     ListPreference mNavigationBarHeightLandscape;
     ListPreference mNavigationBarWidth;
 
+    private ColorPickerPreference mNavbarButtonTint;
     private SwitchPreference mNavigationBarShow;
 
     @Override
@@ -47,6 +52,15 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.nitrogen_settings_navigation);
+
+        // Navigation bar button color
+        mNavbarButtonTint = (ColorPickerPreference) findPreference(NAVIGATION_BAR_TINT);
+        mNavbarButtonTint.setOnPreferenceChangeListener(this);
+        int intColor = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.NAVIGATION_BAR_TINT, 0xffffffff);
+        String hexColor = String.format("#%08x", (0xffffffff & intColor));
+        mNavbarButtonTint.setSummary(hexColor);
+        mNavbarButtonTint.setNewPreviewColor(intColor);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
@@ -143,6 +157,14 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.NAVIGATION_BAR_HEIGHT_LANDSCAPE, Integer.parseInt((String) objValue));
             updateDimensionValues();
+            return true;
+        } else if (preference == mNavbarButtonTint) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(objValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_TINT, intHex);
             return true;
         }
             return false;
