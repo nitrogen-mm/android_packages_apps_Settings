@@ -72,23 +72,19 @@
 
     </dashboard-category>
 
-    <!-- CUSTOMIZATIONS -->
+    <!-- Nitrogen OS -->
     <dashboard-category
             android:id="@+id/nitrogen_section"
             android:title="@string/header_category_nitrogen" >
 
+        <!-- Personalization -->
         <dashboard-tile
                 android:id="@+id/nitrogen_settings"
                 android:title="@string/nitrogen_settings_title"
                 android:fragment="com.android.settings.nitrogen.NitrogenSettings" 
         		android:icon="@drawable/ic_settings_nitrogen" />
-        <!-- App Ops -->
-        <dashboard-tile
-                android:id="@+id/app_ops"
-                android:title="@string/app_ops_settings"
-                android:fragment="com.android.settings.applications.AppOpsSummary"
-                android:icon="@drawable/ic_settings_appops" 
-                />
+
+        <!-- BitSyko Layers -->
         <dashboard-tile
                 android:id="@+id/bitsyko_layers"
                 android:icon="@drawable/ic_bitsyko_layers"
@@ -97,6 +93,24 @@
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="com.lovejoy777.rroandlayersmanager"
                 android:targetClass="com.lovejoy777.rroandlayersmanager.menu" />
+        </dashboard-tile>
+
+        <!-- App Ops -->
+        <dashboard-tile
+                android:id="@+id/app_ops"
+                android:title="@string/app_ops_settings"
+                android:fragment="com.android.settings.applications.AppOpsSummary"
+                android:icon="@drawable/ic_settings_appops" />
+
+        <!-- SuperSU -->
+        <dashboard-tile
+                android:id="@+id/supersu_settings"
+                android:icon="@drawable/ic_settings_supersu"
+                android:title="@string/supersu_title">
+                <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="eu.chainfire.supersu"
+                    android:targetClass="eu.chainfire.supersu.MainActivity" />
         </dashboard-tile>
     </dashboard-category>
 
@@ -275,17 +289,6 @@
                 android:fragment="com.android.settings.DevelopmentSettings"
                 android:icon="@drawable/ic_settings_development"
                 />
-
-        <!-- SuperSU -->
-        <dashboard-tile
-                android:id="@+id/supersu_settings"
-                android:icon="@drawable/ic_settings_supersu"
-                android:title="@string/supersu_title">
-                <intent
-                    android:action="android.intent.action.MAIN"
-                    android:targetPackage="eu.chainfire.supersu"
-                    android:targetClass="eu.chainfire.supersu.MainActivity" />
-        </dashboard-tile>
 
         <!-- About Device -->
         <dashboard-tile

@@ -34,8 +34,8 @@
     <string name="nosupdate_settings_title">Обновления Nitrogen OS</string>
 
     <!-- BUILD TWEAKS -->
-    <string name="header_category_nitrogen">Персонализация</string>
-    <string name="nitrogen_settings_title">Nitrogen OS</string>
+    <string name="header_category_nitrogen">Опции Nitrogen OS</string>
+    <string name="nitrogen_settings_title">Персонализация</string>
 
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">Дата сборки Nitrogen OS</string>
@@ -67,10 +67,10 @@
     <string name="misc_category_options_title">Разные опции</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
-    <string name="supersu_title">SuperSU</string>
+    <string name="supersu_title">Режим суперпользователя</string>
 
     <!-- BitSyko Layers -->
-    <string name="bitsyko_layers">Layers</string>
+    <string name="bitsyko_layers">Слои</string>
 
     <!-- Dev Options Enabled by Default -->
     <string name="show_dev_already_enabled">Не нужно, настройки для разработчика активированы по умлочанию.</string>

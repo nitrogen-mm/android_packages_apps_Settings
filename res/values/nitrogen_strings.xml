@@ -48,8 +48,8 @@
     <string name="nosupdate_settings_title">Nitrogen OS updates</string>
 
     <!-- BUILD TWEAKS -->
-    <string name="header_category_nitrogen">Personalization</string>
-    <string name="nitrogen_settings_title">Nitrogen OS</string>
+    <string name="header_category_nitrogen">Nitrogen OS options</string>
+    <string name="nitrogen_settings_title">Personalization</string>
 
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">Nitrogen OS build date</string>
