@@ -102,6 +102,17 @@
                 android:fragment="com.android.settings.applications.AppOpsSummary"
                 android:icon="@drawable/ic_settings_appops" />
 
+        <!-- Kernel Auditor -->
+        <dashboard-tile
+                android:id="@+id/kernel_auditor"
+                android:icon="@drawable/ic_kernel_auditor"
+                android:title="@string/kernel_auditor">
+                <intent
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.grarak.kerneladiutor"
+                    android:targetClass="com.grarak.kerneladiutor.MainActivity" />
+        </dashboard-tile>
+
         <!-- SuperSU -->
         <dashboard-tile
                 android:id="@+id/supersu_settings"

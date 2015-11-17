@@ -1317,8 +1317,18 @@ public class SettingsActivity extends Activity
                     if (!supported) {
                         removeTile = true;
                     }
-                }
+                } else if (id == R.id.kernel_auditor) {
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("com.grarak.kerneladiutor", 0).versionCode > 0);
+                    } catch (PackageManager.NameNotFoundException e) {
 
+                    }
+                    if (!supported) {
+                        removeTile = true;
+                    }
+
+                }
                 if (UserHandle.MU_ENABLED && UserHandle.myUserId() != 0
                         && !ArrayUtils.contains(SETTINGS_FOR_RESTRICTED, id)) {
                     removeTile = true;

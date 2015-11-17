@@ -72,6 +72,9 @@
     <!-- BitSyko Layers -->
     <string name="bitsyko_layers">Слои</string>
 
+    <!-- Kernel Auditor -->
+    <string name="kernel_auditor">Настройка ядра</string>
+
     <!-- Dev Options Enabled by Default -->
     <string name="show_dev_already_enabled">Не нужно, настройки для разработчика активированы по умлочанию.</string>
 

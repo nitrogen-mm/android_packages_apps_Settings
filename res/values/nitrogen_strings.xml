@@ -86,7 +86,10 @@
     <!-- BitSyko Layers -->
     <string name="bitsyko_layers">Layers</string>
 
-   <!-- Dev Options Enabled by Default -->
+    <!-- Kernel Auditor -->
+    <string name="kernel_auditor">Kernel Auditor</string>
+
+    <!-- Dev Options Enabled by Default -->
     <string name="show_dev_already_enabled">No need, development settings are enabled by default.</string>
 
     <!-- Double Tap Navbar to Sleep -->
