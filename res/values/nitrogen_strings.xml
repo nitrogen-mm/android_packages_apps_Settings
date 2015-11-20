@@ -458,4 +458,7 @@
     <!-- Bluetooth settings. A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
     <string name="bluetooth_accept_all_files">Accept all file types</string>
 
+    <!-- Tests settings -->
+    <string name="tests_settings_title">Hardware test</string>
+    <string name="tests_settings_summary">Phone information, usage statistics, wifi information</string>
 </resources>
