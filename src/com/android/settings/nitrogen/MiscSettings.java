@@ -19,6 +19,9 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
 
+import java.util.Arrays;
+import java.util.HashSet;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -31,11 +34,15 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
     private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
+    private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
+    private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
+    private static final String SCROLLINGCACHE_DEFAULT = "2";
 
     private SwitchPreference mKillAppLongPressBack;
     private SwitchPreference mCameraSounds;
     private ListPreference mRecentsClearAllLocation;
     private SwitchPreference mRecentsClearAll;
+    private ListPreference mScrollingCachePref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -65,6 +72,11 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         mRecentsClearAllLocation.setValue(String.valueOf(location));
         mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntry());
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
+
+        mScrollingCachePref = (ListPreference) findPreference(SCROLLINGCACHE_PREF);
+        mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
+                SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
+        mScrollingCachePref.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -88,6 +100,11 @@ public class MiscSettings extends SettingsPreferenceFragment implements
             Settings.System.putIntForUser(getActivity().getContentResolver(),
                     Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
             mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
+            return true;
+        } else if (preference == mScrollingCachePref) {
+            if (objValue != null) {
+                SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String) objValue);
+            }
             return true;
 	}
 	return false;

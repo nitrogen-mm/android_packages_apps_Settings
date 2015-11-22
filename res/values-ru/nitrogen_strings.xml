@@ -446,4 +446,12 @@
     <!-- Tests settings -->
     <string name="tests_settings_title">Проверка</string>
     <string name="tests_settings_summary">Информация о телефоне, статистика использования, информация о Wi-Fi</string>
+
+    <!-- Scrolling Cache -->
+    <string name="pref_scrollingcache_title">Кэш прокрутки</string>
+    <string name="pref_scrollingcache_summary">Кэш прокрутки может повысить плавность за счёт использования ОЗУ</string>
+    <string name="pref_scrollingcache_force_enable">Принудительно включить</string>
+    <string name="pref_scrollingcache_default_enable">Включить по умолчанию</string>
+    <string name="pref_scrollingcache_default_disable">Отключить по умолчанию</string>
+    <string name="pref_scrollingcache_force_disable">Принудительно отключить</string>
 </resources>
