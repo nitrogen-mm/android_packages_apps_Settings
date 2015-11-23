@@ -479,4 +479,8 @@
     <!-- USB debugging notification -->
     <string name="adb_notify">USB debugging notify</string>
     <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
+
+    <!-- Show/hide headset icon -->
+    <string name="show_headset_icon_title">Show headset icon</string>
+    <string name="show_headset_icon_summary">Display an icon in status bar when headset is plugged in</string>
 </resources>

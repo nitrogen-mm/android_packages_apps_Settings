@@ -463,4 +463,8 @@
     <!-- USB debugging notification -->
     <string name="adb_notify">Уведомление об отладке</string>
     <string name="adb_notify_summary">Показывать уведомление о включенном режиме отладки по USB или по сети</string>
+
+    <!-- Show/hide headset icon -->
+    <string name="show_headset_icon_title">Показывать значок гарнитуры</string>
+    <string name="show_headset_icon_summary">Отобразить значок в строке состояния, когда гарнитура подключена</string>
 </resources>
