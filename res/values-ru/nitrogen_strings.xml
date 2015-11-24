@@ -471,4 +471,8 @@
     <!-- Media ducking -->
     <string name="interruptions_ignore_while_media_title">Не приглушать звук</string>
     <string name="interruptions_ignore_while_media_summary">Не снижать громкость воспроизведения мультимедиа при получении уведомлений</string>
+
+    <!-- Menu label for reset the battery stats -->
+    <string name="menu_stats_reset">Сброс статистики</string>
+    <string name="reset_stats_msg">История использования батареи будет удалена</string>
 </resources>

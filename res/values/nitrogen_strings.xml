@@ -487,4 +487,9 @@
     <!-- Media ducking -->
     <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
     <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
+
+    <!-- Menu label for reset the battery stats -->
+    <string name="menu_stats_reset">Reset stats</string>
+    <!-- Reset stats confirmation dialog's message -->
+    <string name="reset_stats_msg">Battery history stats are going to be reset</string>
 </resources>
