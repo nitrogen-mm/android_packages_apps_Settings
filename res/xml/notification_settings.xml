@@ -128,6 +128,12 @@
                 android:title="@string/lock_screen_notifications_title"
                 android:persistent="false" />
 
+        <!-- Heads up -->
+        <Preference
+                android:key="heads_up_notifications"
+                android:title="@string/heads_up_notifications"
+                android:fragment="com.android.settings.headsup.HeadsUpSettings" />
+
         <!-- App notifications -->
         <PreferenceScreen
                 android:key="app_notifications"
