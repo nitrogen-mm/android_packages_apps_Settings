@@ -485,4 +485,6 @@
     <string name="add_heads_up_blacklist_summary">Не показывать всплывающие уведомления от этих приложений</string>
     <string name="heads_up_dnd_title">Не беспокоить</string>
     <string name="heads_up_blacklist_title">Чёрный список</string>
+    <string name="heads_up_notify_silent">Уведомлять в режиме без звука</string>
+    <string name="heads_up_non_fs">Показывать сообщения в неполноэкранных приложениях</string>
 </resources>

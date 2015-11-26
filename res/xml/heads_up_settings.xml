@@ -22,6 +22,16 @@
             android:summaryOff="@string/summary_heads_up_disabled"
             android:defaultValue="true" />
 
+    <com.android.settings.nitrogen.SystemSettingSwitchPreference
+            android:key="heads_up_notify_silent"
+            android:title="@string/heads_up_notify_silent"
+            android:dependency="heads_up_notifications_enabled" />
+
+    <com.android.settings.nitrogen.SystemSettingSwitchPreference
+            android:key="heads_up_non_fs"
+            android:title="@string/heads_up_non_fs"
+            android:dependency="heads_up_notifications_enabled" />
+
     <PreferenceCategory
             android:title="@string/heads_up_dnd_title"
             android:key="dnd_applications_list"
