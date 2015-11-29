@@ -333,7 +333,7 @@
 
     <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">\"Умная\" панель уведомлений</string>
-    <string name="smart_pulldown_summary">Открыть Быстрые настройки при %1$s уведомлениях</string>
+    <string name="smart_pulldown_summary">Открыть быстрые настройки %1$s уведомлений</string>
     <string name="smart_pulldown_off">Выкл</string>
     <string name="smart_pulldown_dismissable">Без удаляемых</string>
     <string name="smart_pulldown_persistent">Без постоянных</string>
