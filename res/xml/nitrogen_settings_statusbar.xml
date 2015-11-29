@@ -69,6 +69,12 @@
     </PreferenceScreen>
 
     <PreferenceScreen
+        android:fragment="com.android.settings.nitrogen.CarrierLabel"
+        android:key="carrier_options"
+        android:title="@string/carrier_title"
+        android:summary="@string/carrier_options_summary" />
+
+    <PreferenceScreen
         android:key="systemuituner"
         android:title="@string/systemuituner"
         android:summary="@string/systemuituner_summary" >
