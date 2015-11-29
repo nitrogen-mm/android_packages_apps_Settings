@@ -65,6 +65,7 @@
     <string name="display_category_statusbar_options_title">Опции строки состояния</string>
     <string name="display_category_wakeup_options_title">Опции пробуждения</string>
     <string name="misc_category_options_title">Разные опции</string>
+    <string name="display_category_media_options_title">Опции мультимедиа</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">Режим суперпользователя</string>
@@ -487,4 +488,8 @@
     <string name="heads_up_blacklist_title">Чёрный список</string>
     <string name="heads_up_notify_silent">Уведомлять в режиме без звука</string>
     <string name="heads_up_non_fs">Показывать сообщения в неполноэкранных приложениях</string>
+
+    <!-- Volume Keys Media Control -->
+    <string name="volume_keys_control_media_stream">Управление мультимедиа</string>
+    <string name="volume_keys_control_media_stream_summary">Клавиши громкости управляют громкостью мультимедиа вместо громкости уведомлений</string>
 </resources>

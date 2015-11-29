@@ -18,9 +18,12 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
 
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
     private static final String KEY_VOLBTN_MUSIC_CTRL = "volbtn_music_controls";
+    private static final String KEY_VOL_MEDIA = "volume_keys_control_media_stream";
 
     private SwitchPreference mVolumeRockerWake;
     private SwitchPreference mVolBtnMusicCtrl;
+    private SwitchPreference mVolumeKeysControlMedia;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +50,13 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
             }
         } catch (SettingNotFoundException e) {
         }
+
+        // control media anytime
+        mVolumeKeysControlMedia = (SwitchPreference) findPreference(KEY_VOL_MEDIA);
+        mVolumeKeysControlMedia.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.VOLUME_KEYS_CONTROL_MEDIA_STREAM, 0) != 0);
+        mVolumeKeysControlMedia.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -60,6 +70,11 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         } else if (preference == mVolBtnMusicCtrl) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.VOLUME_MUSIC_CONTROLS,
+                    (Boolean) objValue ? 1 : 0);
+            return true;
+        } else if (preference == mVolumeKeysControlMedia) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.VOLUME_KEYS_CONTROL_MEDIA_STREAM,
                     (Boolean) objValue ? 1 : 0);
             return true;
         }

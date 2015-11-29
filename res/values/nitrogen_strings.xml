@@ -79,6 +79,7 @@
     <string name="display_category_statusbar_options_title">Status bar options</string>
     <string name="display_category_wakeup_options_title">Wakeup options</string>
     <string name="misc_category_options_title">Misc options</string>
+    <string name="display_category_media_options_title">Media options</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
@@ -504,4 +505,8 @@
     <string name="heads_up_blacklist_title">Blacklist</string>
     <string name="heads_up_notify_silent">Notify silent notifications</string>
     <string name="heads_up_non_fs">Show heads up on non-fullscreen apps</string>
+
+    <!-- Volume Keys Media Control -->
+    <string name="volume_keys_control_media_stream">Media control</string>
+    <string name="volume_keys_control_media_stream_summary">Volume keys control media volume rather than notifications</string>
 </resources>
