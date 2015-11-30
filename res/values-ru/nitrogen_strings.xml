@@ -508,4 +508,9 @@
     <string name="show_carrier_keyguard">На экране блокировки</string>
     <string name="show_carrier_statusbar">В строке состояния</string>
     <string name="show_carrier_enabled">На экране блокировки &amp; в строке состояния</string>
+
+    <!-- Recents Fullscreen -->
+    <string name="recents_show_fullscreen">Полноэкранные недавние</string>
+    <string name="recents_fullscreen_summary_enabled">Полноэкранные недавние приложения включены</string>
+    <string name="recents_fullscreen_summary_disabled">Полноэкранные недавние приложения выключены</string>
 </resources>
