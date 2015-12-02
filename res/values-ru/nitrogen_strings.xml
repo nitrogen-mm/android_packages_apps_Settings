@@ -517,4 +517,10 @@
     <!-- Media art -->
     <string name="media_art_title">Медия-обложка</string>
     <string name="media_art_summary">Включение Медиа-обложки на Экране блокировки</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">Сканирование медиафайлов при загрузке</string>
+    <string name="media_scanner_on_boot_enabled">Сканировать</string>
+    <string name="media_scanner_on_boot_ask">Спросить для сканирования (уведомление)</string>
+    <string name="media_scanner_on_boot_disabled">Не сканировать</string>
 </resources>
