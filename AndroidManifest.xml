@@ -2611,7 +2611,5 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".headsup.HeadsUpSettings" />
-
     </application>
 </manifest>
