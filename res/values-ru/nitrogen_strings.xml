@@ -511,4 +511,18 @@
     <string name="media_scanner_on_boot_enabled">Сканировать</string>
     <string name="media_scanner_on_boot_ask">Спросить для сканирования (уведомление)</string>
     <string name="media_scanner_on_boot_disabled">Не сканировать</string>
+
+    <!-- Circle app bar -->
+    <string name="category_app_circle_bar_title">Круговая Панель приложений</string>
+    <string name="app_circle_bar_title">Круг приложений</string>
+    <string name="app_circle_bar_summary">Показать круг приложений после прикосновения к правому краю экрана</string>
+    <string name="app_circle_bar_included_apps_title">Добавленные приложения</string>
+    <string name="app_circle_bar_included_apps_summary">Приложения, отображаемые в круге</string>
+    <string name="trigger_width_title">Ширина области вызова</string>
+    <string name="trigger_top_title">Позиция области вызова</string>
+    <string name="trigger_top_summary">Установите вертикальное расположение области вызова</string>
+    <string name="trigger_bottom_title">Высота области вызова</string>
+    <string name="trigger_bottom_summary">Установите высоту области вызова</string>
+    <string name="trigger_width_summary">Установите ширину области вызова</string>
+    <string name="trigger_category">Область вызова</string>
 </resources>

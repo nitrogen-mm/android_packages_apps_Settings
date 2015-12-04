@@ -15,6 +15,7 @@
 -->
 
 <resources>
+    <color name="white">#FFF</color>
     <color name="black">#000</color>
     <color name="red">#F00</color>
     <color name="blue">#00F</color>
@@ -73,6 +74,10 @@
     <color name="running_processes_free_ram">#ffced7db</color>
 
     <color name="card_background">#ffffffff</color>
+
+    <color name="material_deep_teal_500">@*android:color/material_deep_teal_500</color>
+    <color name="theme_accent">?android:attr/colorAccent</color>
+    <color name="icon_tint_color">@color/material_deep_teal_500</color>
 
     <color name="switchbar_background_color">#ff37474f</color>
     <color name="switch_accent_color">#ff7fcac3</color>

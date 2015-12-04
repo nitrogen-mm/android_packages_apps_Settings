@@ -7,6 +7,11 @@
         android:key="category_misc_options"
         android:title="@string/misc_category_options_title" >
 
+     <PreferenceScreen
+        android:key="app_circle_bar"
+        android:fragment="com.android.settings.nitrogen.AppCircleBar"
+        android:title="@string/app_circle_bar_title" />
+
      <SwitchPreference
         android:key="kill_app_longpress_back"
         android:title="@string/kill_app_longpress_back"
@@ -48,6 +53,7 @@
         android:entries="@array/media_scanner_on_boot_entries"
         android:entryValues="@array/media_scanner_on_boot_values"
         android:persistent="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
