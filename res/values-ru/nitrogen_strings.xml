@@ -553,4 +553,22 @@
     <string name="hardware_keys_action_launch_camera">Запуск камеры</string>
     <string name="hardware_keys_action_sleep">Выключить экран</string>
     <string name="hardware_keys_action_last_app">Последнее приложение</string>
+
+    <!-- Key backlight -->
+    <string name="settings_reset_button">Сброс</string>
+    <string name="button_backlight_title">Подсветка</string>
+    <string name="button_backlight_enabled">Подсветка кнопок</string>
+    <string name="keyboard_backlight_enabled">Подсветка клавиатуры</string>
+    <string name="button_backlight_seekbar_title">Яркость кнопок</string>
+    <string name="keyboard_backlight_seekbar_title">Яркость клавиатуры</string>
+    <string name="backlight_timeout_title">Длительность подсветки</string>
+    <string name="backlight_timeout_unlimited">Не выключать</string>
+    <string name="backlight_summary_disabled">Выключена</string>
+    <string name="backlight_summary_enabled_with_timeout">Включена <xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">Включена всегда</string>
+    <plurals name="backlight_timeout_time">
+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> секунду</item>
+        <item quantity="few"><xliff:g id="seconds">%d</xliff:g> секунды</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> секунд</item>
+    </plurals>
 </resources>

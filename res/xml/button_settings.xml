@@ -17,6 +17,12 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.android.settings.nitrogen.ButtonBacklightBrightness
+        android:key="button_backlight"
+        android:title="@string/button_backlight_title"
+        android:dialogTitle="@string/button_backlight_title"
+        android:persistent="false" />
+
         <PreferenceScreen
             android:key="volume_rocker_general_category"
             android:fragment="com.android.settings.nitrogen.VolumeRockerSettings"
