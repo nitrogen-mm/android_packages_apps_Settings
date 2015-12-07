@@ -17,6 +17,11 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+        <PreferenceScreen
+            android:key="volume_rocker_general_category"
+            android:fragment="com.android.settings.nitrogen.VolumeRockerSettings"
+            android:title="@string/volume_rocker_screen_title" />
+
  <PreferenceCategory
         android:key="home_key"
         android:title="@string/hardware_keys_home_key_title" >
