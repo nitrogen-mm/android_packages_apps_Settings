@@ -503,7 +503,7 @@
     <string name="recents_fullscreen_summary_disabled">Полноэкранные недавние приложения выключены</string>
 
     <!-- Media art -->
-    <string name="media_art_title">Медия-обложка</string>
+    <string name="media_art_title">Медиа-обложка</string>
     <string name="media_art_summary">Включение Медиа-обложки на Экране блокировки</string>
 
     <!-- MediaScanner behavior on boot -->
