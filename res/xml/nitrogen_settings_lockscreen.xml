@@ -31,6 +31,23 @@
             android:title="@string/media_art_title"
             android:summary="@string/media_art_summary"
             android:defaultValue="true" />
+
+        <com.android.settings.nitrogen.SystemSettingSwitchPreference
+                android:key="lockscreen_see_through"
+                android:title="@string/lockscreen_see_through_title"
+                android:summary="@string/lockscreen_see_through_summary"
+                android:defaultValue="false" />
+
+        <com.android.settings.nitrogen.SeekBarPreference
+                android:key="lockscreen_blur_radius"
+                android:title="@string/lockscreen_blur_radius"
+                android:max="25"
+                settings:min="0"
+                settings:unitsLeft=""
+                settings:unitsRight=""
+                android:persistent="false"
+                android:dependency="lockscreen_see_through" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
