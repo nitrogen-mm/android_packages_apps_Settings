@@ -189,7 +189,6 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         refreshZenAccess();
         updateRingerMode();
         updateEffectsSuppressor();
-        updateSlidersAndMutedStates();
     }
 
     @Override
