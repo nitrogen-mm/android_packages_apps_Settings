@@ -599,4 +599,9 @@
     <string name="volume_steps_ring_title">Уровень громкости: Звонок</string>
     <string name="volume_steps_system_title">Уровень громкости: Система</string>
     <string name="volume_steps_voice_call_title">Уровень громкости: Голосовой вызов</string>
+
+    <!-- Time-context headers in notification header -->
+    <string name="status_bar_custom_header_title">Динамический фон заголовка</string>
+    <string name="status_bar_custom_header_summary">Показывать изображение в заголовке панели уведомления в зависимости от времени суток</string>
+    <string name="daylight_header_pack_title">Пакет изображений</string>
 </resources>
