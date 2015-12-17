@@ -14,7 +14,10 @@ import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
+import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.util.Log;
@@ -171,6 +174,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
     }
 
     private static void writeDisableNavkeysOption(Context context, boolean enabled) {
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         final int defaultBrightness = context.getResources().getInteger(
                 com.android.internal.R.integer.config_buttonBrightnessSettingDefault);
 
@@ -182,9 +186,11 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(context.getContentResolver(),
                     Settings.System.BUTTON_BRIGHTNESS, 0);
         } else {
+            int oldBright = prefs.getInt(ButtonBacklightBrightness.KEY_BUTTON_BACKLIGHT,
+                    defaultBrightness);
             Settings.System.putInt(context.getContentResolver(),
-                    Settings.System.BUTTON_BRIGHTNESS, defaultBrightness);
-	}
+                    Settings.System.BUTTON_BRIGHTNESS, oldBright);
+        }
     }
 
     private void updateDisableNavkeysOption() {
