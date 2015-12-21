@@ -31,11 +31,12 @@
             android:key="lock_screen_general_category"
             android:fragment="com.android.settings.nitrogen.LockScreenSettings"
             android:title="@string/lockscreen_title" />
-<!--
+
         <PreferenceScreen
             android:key="power_menu_general_category"
+            android:fragment="com.android.settings.nitrogen.PowerMenuActions"
             android:title="@string/power_menu_title" />
--->
+
         <PreferenceScreen
             android:key="nitrogen_misc_category"
             android:fragment="com.android.settings.nitrogen.MiscSettings"

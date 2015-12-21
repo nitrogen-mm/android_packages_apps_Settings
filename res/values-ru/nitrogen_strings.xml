@@ -48,7 +48,7 @@
     <string name="navigation_bar_screen_title">Навигационный бар</string>
     <string name="gestures_title">Жесты</string>
     <string name="lockscreen_title">Экран блокировки</string>
-    <string name="power_menu_title">Меню пистания</string>
+    <string name="power_menu_title">Меню питания</string>
     <string name="volume_rocker_screen_title">Кнопки громкости</string>
     <string name="volume_rocker_other_title">Другие</string>
     <string name="nitrogen_misc_category_title">Разные настройки</string>
@@ -604,4 +604,17 @@
     <string name="status_bar_custom_header_title">Динамический фон заголовка</string>
     <string name="status_bar_custom_header_summary">Показывать изображение в заголовке панели уведомления в зависимости от времени суток</string>
     <string name="daylight_header_pack_title">Пакет изображений</string>
+
+    <!-- powermenu fragment -->
+    <string name="power_menu_reboot_title">Перезагрузка</string>
+    <string name="power_menu_screenshot_title">Скриншот</string>
+    <string name="power_menu_airplane_title">Режим полета</string>
+    <string name="power_menu_users_title">Пользователи</string>
+    <string name="power_menu_search_title">Поиск</string>
+    <string name="power_menu_voice_title">Голосовой поиск</string>
+    <string name="power_menu_settings_title">Ярлык настроек</string>
+    <string name="power_menu_lockdown_title">Блокировка устройства</string>
+    <string name="power_menu_bug_report_title">Отчет об ошибке</string>
+    <string name="power_menu_sound_title">Звуковая панель</string>
+    <string name="power_menu_bug_report_disabled">Отчет об ошибке отключен в настройках для разработчика</string>
 </resources>
