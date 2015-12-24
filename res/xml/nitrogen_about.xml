@@ -51,11 +51,13 @@
             <Preference
                     android:title="@string/nos_dev1"
                     android:summary="@string/nos_dev1_summary"
+                    android:icon="@drawable/ic_settings_xyyx"
                     android:data="https://github.com/xyyx"/>
 
             <Preference
                     android:title="@string/nos_dev2"
                     android:summary="@string/nos_dev2_summary"
+                    android:icon="@drawable/ic_settings_mr_mex"
                     android:data="https://github.com/Mr-MEX"/>
         </PreferenceCategory>
 
@@ -63,32 +65,58 @@
         <PreferenceCategory
                 android:key="category_nitrogen_thanks"
                 android:title="@string/nos_thanks">
-				
+
             <Preference
-                    android:title="@string/nos_thanks1"/>
+                    android:title="@string/nos_thanks1"
+                    android:summary="@string/nos_thanks_summary"
+                    android:data="https://github.com/zephiK"/>
             <Preference
-                    android:title="@string/nos_thanks2"/>
+                    android:title="@string/nos_thanks2"
+                    android:summary="@string/nos_thanks_summary"
+                    android:data="https://github.com/Altaf-Mahdi"/>
             <Preference
-                    android:title="@string/nos_thanks3"/>
+                    android:title="@string/nos_thanks3"
+                    android:summary="@string/nos_thanks_summary"
+                    android:data="https://github.com/CallMeAldy"/>
             <Preference
-                    android:title="@string/nos_thanks4"/>
+                    android:title="@string/nos_thanks4"
+                    android:summary="@string/nos_thanks_summary"
+                    android:data="https://github.com/lion0738"/>
             <Preference
-                    android:title="@string/nos_thanks5"/>
+                    android:title="@string/nos_thanks5"
+                    android:summary="@string/nos_thanks_summary"
+                    android:data="https://github.com/Abhinav1997"/>
             <Preference
-                    android:title="@string/nos_thanks6"/>
+                    android:title="@string/nos_thanks6"
+                    android:summary="@string/nos_thanks_summary"
+                    android:data="https://github.com/rmcc"/>
             <Preference
-                    android:title="@string/nos_thanks7"/>
+                    android:title="@string/nos_thanks7"
+                    android:summary="@string/nos_thanks_summary"
+                    android:data="https://github.com/Cl3Kener"/>
             <Preference
-                    android:title="@string/nos_thanks8"/>
+                    android:title="@string/nos_thanks8"
+                    android:summary="@string/nos_thanks_summary"
+                    android:data="https://github.com/romanbb"/>
             <Preference
-                    android:title="@string/nos_thanks9"/>
+                    android:title="@string/nos_thanks9"
+                    android:summary="@string/nos_thanks_summary"
+                    android:data="https://github.com/kufikugel"/>
             <Preference
-                    android:title="@string/nos_thanks10"/>
+                    android:title="@string/nos_thanks10"
+                    android:summary="@string/nos_thanks_summary"
+                    android:data="https://github.com/Kevindeving"/>
             <Preference
-                    android:title="@string/nos_thanks11"/>
+                    android:title="@string/nos_thanks11"
+                    android:summary="@string/nos_thanks_summary"
+                    android:data="https://github.com/Mazda--"/>
             <Preference
-                    android:title="@string/nos_thanks12"/>
+                    android:title="@string/nos_thanks12"
+                    android:summary="@string/nos_thanks_summary"
+                    android:data="https://github.com/maxwen"/>
             <Preference
-                    android:title="@string/nos_thanks13"/>
+                    android:title="@string/nos_thanks13"
+                    android:summary="@string/nos_thanks_summary"
+                    android:data="https://github.com/cyanogen"/>
         </PreferenceCategory>
 </PreferenceScreen>

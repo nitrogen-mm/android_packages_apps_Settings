@@ -20,11 +20,12 @@
     <string name="nos_github">Nitrogen Project on GitHub</string>
     <string name="nos_googleplus">Google+ community</string>
     <string name="nos_developers">Developers</string>
-    <string name="nos_dev1">xyyx</string>
+    <string name="nos_dev1">xyyx (Max)</string>
     <string name="nos_dev1_summary">Main developer</string>
-    <string name="nos_dev2">Mr.MEX</string>
+    <string name="nos_dev2">Mr.MEX (Valery)</string>
     <string name="nos_dev2_summary">Developer</string>
     <string name="nos_thanks">Thanks</string>
+    <string name="nos_thanks_summary">GitHub profile</string>
     <string name="nos_thanks1">zephiK</string>
     <string name="nos_thanks2">Altaf-Mahdi</string>
     <string name="nos_thanks3">CallMeAldy</string>
@@ -36,7 +37,7 @@
     <string name="nos_thanks9">kufikugel</string>
     <string name="nos_thanks10">Kevindeving</string>
     <string name="nos_thanks11">Mazda--</string>
-    <string name="nos_thanks12">Mahdi-Rom</string>
+    <string name="nos_thanks12">maxwen</string>
     <string name="nos_thanks13">cyanogen</string>
 
     <!-- Changelog -->

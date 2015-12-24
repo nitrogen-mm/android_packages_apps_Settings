@@ -24,6 +24,7 @@
     <string name="nos_dev2_summary">Разработчик</string>
     <string name="nos_developers_summary">Разработчик</string>
     <string name="nos_thanks">Благодарности</string>
+    <string name="nos_thanks_summary">Профиль на GitHub</string>
 
     <!-- Changelog -->
     <string name="changelog_title">Список изменений</string>
