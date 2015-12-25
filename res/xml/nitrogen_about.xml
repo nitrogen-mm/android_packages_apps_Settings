@@ -52,12 +52,14 @@
                     android:title="@string/nos_dev1"
                     android:summary="@string/nos_dev1_summary"
                     android:icon="@drawable/ic_settings_xyyx"
+                    android:action="android.intent.action.VIEW"
                     android:data="https://github.com/xyyx"/>
 
             <Preference
                     android:title="@string/nos_dev2"
                     android:summary="@string/nos_dev2_summary"
                     android:icon="@drawable/ic_settings_mr_mex"
+                    android:action="android.intent.action.VIEW"
                     android:data="https://github.com/Mr-MEX"/>
         </PreferenceCategory>
 
