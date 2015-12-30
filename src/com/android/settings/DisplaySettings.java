@@ -74,6 +74,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.android.settings.nitrogen.DisplayRotation;
+import com.android.settings.nitrogen.NumberPickerPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -101,6 +102,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_CAMERA_GESTURE = "camera_gesture";
     private static final String KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE
             = "camera_double_tap_power_gesture";
+    private static final String DT2L_TARGET_VIBRATE_CONFIG = "dt2l_target_vibrate_config";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
@@ -127,6 +129,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mAutoBrightnessPreference;
     private SwitchPreference mCameraGesturePreference;
     private SwitchPreference mCameraDoubleTapPowerGesturePreference;
+    private NumberPickerPreference mDt2lTargetVibrateConfig;
+
+    private static final int MIN_VIB_VALUE = 1;
+    private static final int MAX_VIB_VALUE = 750;
 
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {
@@ -168,6 +174,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         mFontSizePref = (WarnedListPreference) findPreference(KEY_FONT_SIZE);
         mFontSizePref.setOnPreferenceChangeListener(this);
         mFontSizePref.setOnPreferenceClickListener(this);
+
+        mDt2lTargetVibrateConfig = (NumberPickerPreference) prefSet.findPreference(DT2L_TARGET_VIBRATE_CONFIG);
+        mDt2lTargetVibrateConfig.setOnPreferenceChangeListener(this);
+        mDt2lTargetVibrateConfig.setOnPreferenceClickListener(this);
+        mDt2lTargetVibrateConfig.setMinValue(MIN_VIB_VALUE);
+        mDt2lTargetVibrateConfig.setMaxValue(MAX_VIB_VALUE);
+        int cvConfig = Settings.System.getInt(resolver, Settings.System.DT2L_TARGET_VIBRATE_CONFIG, 1);
+        mDt2lTargetVibrateConfig.setCurrentValue(cvConfig);
 
         if (isAutomaticBrightnessAvailable(getResources())) {
             mAutoBrightnessPreference = (SwitchPreference) findPreference(KEY_AUTO_BRIGHTNESS);
@@ -671,6 +685,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             Settings.Secure.putInt(getContentResolver(), CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED,
                     value ? 0 : 1 /* Backwards because setting is for disabling */);
         }
+
+        if (preference == mDt2lTargetVibrateConfig) {
+            int value = Integer.parseInt(objValue.toString());
+            Settings.System.putInt(getContentResolver(), Settings.System.DT2L_TARGET_VIBRATE_CONFIG,
+                    value);
+        }
+
         if (preference == mNightModePreference) {
             try {
                 final int value = Integer.parseInt((String) objValue);

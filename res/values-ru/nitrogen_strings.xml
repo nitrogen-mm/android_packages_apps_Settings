@@ -650,4 +650,11 @@
     <!-- Privacy Settings Header item -->
     <string name="privacy_settings_cyanogenmod_title">Конфиденциальность</string>
     <string name="app_ops_summary">Контроль доступа для приложений</string>
+
+    <!-- Double tap to launch target -->
+    <string name="dt2l_target_category">Двойное нажатие питания</string>
+    <string name="dt2l_target_vib_title">Настройка вибрации</string>
+    <string name="dt2l_target_vib_summary">Вибрация при двойном нажатии кнопки питания</string>
+    <string name="camera_double_tap_power_gesture_title">"Камера двойным нажатием кнопки питания"</string>
+    <string name="camera_double_tap_power_gesture_desc">"Быстро открывать камеру, не снимая блокировку экрана."</string>
 </resources>
