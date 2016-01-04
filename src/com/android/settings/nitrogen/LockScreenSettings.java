@@ -24,6 +24,7 @@ import android.app.WallpaperManager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -42,10 +43,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
     private static final String KEY_WALLPAPER_SET = "lockscreen_wallpaper_set";
     private static final String KEY_WALLPAPER_CLEAR = "lockscreen_wallpaper_clear";
     private static final String KEY_BLUR_RADIUS = "lockscreen_blur_radius";
+    private static final String LOCK_CLOCK_FONTS = "lock_clock_fonts";
 
     private Preference mSetWallpaper;
     private Preference mClearWallpaper;
     private SeekBarPreference mBlurRadius;
+    private ListPreference mLockClockFonts;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,6 +66,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
                     Settings.System.LOCKSCREEN_BLUR_RADIUS, 14);
             mBlurRadius.setValue(blurRadius);
             mBlurRadius.setOnPreferenceChangeListener(this);
+
+        mLockClockFonts = (ListPreference) findPreference(LOCK_CLOCK_FONTS);
+        mLockClockFonts.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.LOCK_CLOCK_FONTS, 0)));
+        mLockClockFonts.setSummary(mLockClockFonts.getEntry());
+        mLockClockFonts.setOnPreferenceChangeListener(this);
         }
     }
 
@@ -108,6 +117,12 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.LOCKSCREEN_BLUR_RADIUS,
             blurRadius);
+            return true;
+        } else if (preference == mLockClockFonts) {
+            Settings.System.putInt(getContentResolver(), Settings.System.LOCK_CLOCK_FONTS,
+                    Integer.valueOf((String) newValue));
+            mLockClockFonts.setValue(String.valueOf(newValue));
+            mLockClockFonts.setSummary(mLockClockFonts.getEntry());
             return true;
         }
         return false;
