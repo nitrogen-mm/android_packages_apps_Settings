@@ -74,16 +74,14 @@
         android:title="@string/nos_donate_developers">
 
         <PreferenceScreen
-            android:title="@string/nos_dev1"
-            android:icon="@drawable/ic_settings_xyyx">
+            android:title="@string/nos_dev1">
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="http://forum.xda-developers.com/donatetome.php?u=5422618"/>
         </PreferenceScreen>
 
         <PreferenceScreen
-            android:title="@string/nos_dev2"
-            android:icon="@drawable/ic_settings_mr_mex">
+            android:title="@string/nos_dev2">
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="http://forum.xda-developers.com/donatetome.php?u=5834597"/>
