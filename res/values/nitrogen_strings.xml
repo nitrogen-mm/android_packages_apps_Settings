@@ -740,4 +740,10 @@
     <!-- Quick Settings edit icon -->
     <string name="quick_settings_edit_icon_title">QS edit icon</string>
     <string name="quick_settings_edit_icon_summary">Controls the quick settings edit icon in the drawer</string>
+
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
+    <string name="increasing_ring_min_volume_title">Start volume</string>
+    <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
+
 </resources>
