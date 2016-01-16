@@ -24,7 +24,7 @@
         android:title="@string/nos_website">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="http://nitrogen-project.github.io/s" />
+            android:data="http://nitrogen-project.github.io" />
     </PreferenceScreen>
 
     <!-- Github -->
