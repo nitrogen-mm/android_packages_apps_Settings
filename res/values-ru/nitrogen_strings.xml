@@ -682,4 +682,8 @@
     <string name="show_cpu_info">Показать информацию о процессоре</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
     <string name="show_cpu_info_summary">Экранное наложение, показывающее текущую информацию ЦП</string>
+
+    <!-- Longpress power lockscreen torch -->
+    <string name="keyguard_torch_title">Фонарик</string>
+    <string name="keyguard_torch_summary">Удерживание кнопки питания при выключенном экране включает фонарик</string>
 </resources>
