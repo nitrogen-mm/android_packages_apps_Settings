@@ -38,6 +38,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
     private static final String SCROLLINGCACHE_DEFAULT = "2";
     private static final String PREF_MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
+    private static final String IMMERSIVE_RECENTS = "immersive_recents";
 
     private SwitchPreference mKillAppLongPressBack;
     private SwitchPreference mCameraSounds;
@@ -45,6 +46,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mRecentsClearAll;
     private ListPreference mScrollingCachePref;
     private ListPreference mMsob;
+    private ListPreference mImmersiveRecents;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -85,6 +87,12 @@ public class MiscSettings extends SettingsPreferenceFragment implements
                 Settings.System.MEDIA_SCANNER_ON_BOOT, 0)));
         mMsob.setSummary(mMsob.getEntry());
         mMsob.setOnPreferenceChangeListener(this);
+
+        mImmersiveRecents = (ListPreference) findPreference(IMMERSIVE_RECENTS);
+        mImmersiveRecents.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.IMMERSIVE_RECENTS, 0)));
+        mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
+        mImmersiveRecents.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -122,6 +130,12 @@ public class MiscSettings extends SettingsPreferenceFragment implements
             mMsob.setValue(String.valueOf(objValue));
             mMsob.setSummary(mMsob.getEntry());
             return true;
+
+        } else if (preference == mImmersiveRecents) {
+            Settings.System.putInt(getContentResolver(), Settings.System.IMMERSIVE_RECENTS,
+                    Integer.valueOf((String) objValue));
+            mImmersiveRecents.setValue(String.valueOf(objValue));
+            mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
 	}
 	return false;
     }
