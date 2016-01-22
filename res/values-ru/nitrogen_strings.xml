@@ -691,4 +691,10 @@
     <!-- Longpress power lockscreen torch -->
     <string name="keyguard_torch_title">Фонарик</string>
     <string name="keyguard_torch_summary">Удерживание кнопки питания при выключенном экране включает фонарик</string>
+
+    <!-- Notification fragment -->
+    <string name="battery_saver_notif_title">Уведомление режима энергосбережения</string>
+    <string name="battery_saver_notif_summary">Показывать уведомление при включении режима энергосбережения</string>
+    <string name="battery_low_notif_title">Уведомление о низком заряде батареи</string>
+    <string name="battery_low_notif_summary">Показать уведомление о низком заряде батареи</string>
 </resources>

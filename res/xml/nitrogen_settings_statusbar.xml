@@ -18,6 +18,18 @@
         android:key="clock_style_pref"
         android:title="@string/status_bar_clock"
 	android:summary="@string/status_bar_clock_summary" />
+
+    <com.android.settings.nitrogen.SystemSettingSwitchPreference
+        android:key="battery_saver_notification"
+        android:title="@string/battery_saver_notif_title"
+        android:summary="@string/battery_saver_notif_summary"
+        android:defaultValue="true" />
+
+    <com.android.settings.nitrogen.SystemSettingSwitchPreference
+        android:key="battery_low_notification"
+        android:title="@string/battery_low_notif_title"
+        android:summary="@string/battery_low_notif_summary"
+        android:defaultValue="true" />
     </PreferenceCategory>
 
    <PreferenceCategory
