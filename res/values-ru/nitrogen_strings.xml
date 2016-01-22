@@ -133,6 +133,7 @@
     <string name="display_rotation_90_title">90 градусов</string>
     <string name="display_rotation_180_title">180 градусов</string>
     <string name="display_rotation_270_title">270 градусов</string>
+    <string name="display_lockscreen_rotation_title">Поворот экрана блокировки</string>
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Индикация</string>

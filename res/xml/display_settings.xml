@@ -99,6 +99,11 @@
                 android:fragment="com.android.settings.nitrogen.DisplayRotation"
                 android:title="@string/display_rotation_title" />
 
+	<com.android.settings.nitrogen.SystemSettingSwitchPreference
+                android:key="lockscreen_rotation"
+                android:title="@string/display_lockscreen_rotation_title" 
+                android:defaultValue="false"/>
+
         <PreferenceScreen
                 android:key="wifi_display"
                 android:title="@string/wifi_display_settings_title"
