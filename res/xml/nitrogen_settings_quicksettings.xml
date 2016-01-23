@@ -3,6 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+        <PreferenceScreen
+            android:key="tuner_tiles"
+            android:title="@string/tuner_tiles" >
+
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.TunerTiles" />
+        </PreferenceScreen>
+
         <com.android.settings.nitrogen.SecureSettingSwitchPreference
             android:key="qs_use_four_columns"
             android:title="@string/qs_four_columns_title"
@@ -41,14 +51,4 @@
             android:entryValues="@array/smart_pulldown_values"
             android:persistent="false" />
 
-        <PreferenceScreen
-            android:key="systemuituner"
-            android:title="@string/systemuituner"
-            android:summary="@string/systemuituner_summary" >
-
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.TunerActivity" />
-        </PreferenceScreen>
 </PreferenceScreen>

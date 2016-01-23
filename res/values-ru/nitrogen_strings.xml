@@ -241,8 +241,8 @@
     <string name="volume_key_cursor_control_on">Кнопка "+" двигает курсор влево, "-" вправо</string>
     <string name="volume_key_cursor_control_on_reverse">Кнопка "+" двигает курсор вправо, "-" влево</string>
 
-    <string name="systemuituner">System UI Tuner</string>
-    <string name="systemuituner_summary">Редактировать плитки и иконки</string>
+    <string name="tuner_tiles">Настройка плиток</string>
+    <string name="tuner_icons">Настройка иконок</string>
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Индикатор сетевого трафика</string>

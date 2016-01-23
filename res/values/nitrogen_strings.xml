@@ -255,8 +255,8 @@
     <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
     <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
 
-    <string name="systemuituner">System UI Tuner</string>
-    <string name="systemuituner_summary">Tune tiles and icons</string>
+    <string name="tuner_tiles">Tune tiles</string>
+    <string name="tuner_icons">Tune icons</string>
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>
