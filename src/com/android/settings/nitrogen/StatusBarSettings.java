@@ -31,8 +31,6 @@ import java.util.ArrayList;
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String PRE_QUICK_PULLDOWN = "quick_pulldown";
-    private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
     private static final String KEY_LOCK_CLOCK = "lock_clock";
     private static final String KEY_LOCK_CLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
     private static final String CUSTOM_HEADER_IMAGE = "status_bar_custom_header";
@@ -40,8 +38,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final String DEFAULT_HEADER_PACKAGE = "com.android.systemui";
 
     private PreferenceScreen mLockClock;
-    private ListPreference mQuickPulldown;
-    private ListPreference mSmartPulldown;
     private SwitchPreference mCustomHeaderImage;
     private ListPreference mDaylightHeaderPack;
 
@@ -53,33 +49,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
-        // Quick pulldown
-	mQuickPulldown = (ListPreference) findPreference(PRE_QUICK_PULLDOWN);
-        if (!Utils.isPhone(getActivity())) {
-            prefSet.removePreference(mQuickPulldown);
-        } else {
-            mQuickPulldown.setOnPreferenceChangeListener(this);
-            int statusQuickPulldown = Settings.System.getInt(getContentResolver(),
-                    Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
-            mQuickPulldown.setValue(String.valueOf(statusQuickPulldown));
-            updateQuickPulldownSummary(statusQuickPulldown);
-        }
-
-        // Smart Pulldown
-        mSmartPulldown = (ListPreference) findPreference(PREF_SMART_PULLDOWN);
-        mSmartPulldown.setOnPreferenceChangeListener(this);
-        int smartPulldown = Settings.System.getInt(getContentResolver(),
-                Settings.System.QS_SMART_PULLDOWN, 0);
-        mSmartPulldown.setValue(String.valueOf(smartPulldown));
-        updateSmartPulldownSummary(smartPulldown);
-
-    // mLockClock 
-    	mLockClock = (PreferenceScreen) findPreference(KEY_LOCK_CLOCK);
+        // mLockClock 
+        mLockClock = (PreferenceScreen) findPreference(KEY_LOCK_CLOCK);
         if (!Utils.isPackageInstalled(getActivity(), KEY_LOCK_CLOCK_PACKAGE_NAME)) {
             prefSet.removePreference(mLockClock);
         }
 
-    // HeaderImagePack
+        // HeaderImagePack
         final boolean customHeaderImage = Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_CUSTOM_HEADER, 0) == 1;
         mCustomHeaderImage = (SwitchPreference) findPreference(CUSTOM_HEADER_IMAGE);
@@ -123,20 +99,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mQuickPulldown) {
-            int statusQuickPulldown = Integer.valueOf((String) objValue);
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
-                    statusQuickPulldown);
-            updateQuickPulldownSummary(statusQuickPulldown);
-            return true;
-        } else if (preference == mSmartPulldown) {
-            int smartPulldown = Integer.valueOf((String) objValue);
-            Settings.System.putIntForUser(getContentResolver(), Settings.System.QS_SMART_PULLDOWN,
-                    smartPulldown, UserHandle.USER_CURRENT);
-            updateSmartPulldownSummary(smartPulldown);
-            return true;
-        } else if (preference == mDaylightHeaderPack) {
+        if (preference == mDaylightHeaderPack) {
             String value = (String) objValue;
             Settings.System.putString(getContentResolver(),
                     Settings.System.STATUS_BAR_DAYLIGHT_HEADER_PACK, value);
@@ -150,47 +113,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     @Override
     protected int getMetricsCategory() {
         return MetricsLogger.STATUSBAR_SETTINGS;
-    }
-
-    private void updateQuickPulldownSummary(int value) {
-        Resources res = getResources();
-
-        if (value == 0) {
-            // quick pulldown deactivated
-            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_off));
-        } else {
-            Locale l = Locale.getDefault();
-            boolean isRtl = TextUtils.getLayoutDirectionFromLocale(l) == View.LAYOUT_DIRECTION_RTL;
-            String direction = res.getString(value == 2
-                    ? (isRtl ? R.string.quick_pulldown_right : R.string.quick_pulldown_left)
-                    : (isRtl ? R.string.quick_pulldown_left : R.string.quick_pulldown_right));
-            mQuickPulldown.setSummary(res.getString(R.string.summary_quick_pulldown, direction));
-        }
-    }
-
-    private void updateSmartPulldownSummary(int value) {
-        Resources res = getResources();
-
-        if (value == 0) {
-            // Smart pulldown deactivated
-            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_off));
-        } else {
-            String type = null;
-            switch (value) {
-                case 1:
-                    type = res.getString(R.string.smart_pulldown_dismissable);
-                    break;
-                case 2:
-                    type = res.getString(R.string.smart_pulldown_persistent);
-                    break;
-                default:
-                    type = res.getString(R.string.smart_pulldown_all);
-                    break;
-            }
-            // Remove title capitalized formatting
-            type = type.toLowerCase();
-            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_summary, type));
-        }
     }
 
    private String[] getAvailableHeaderPacksValues() {

@@ -15,6 +15,13 @@
             android:fragment="com.android.settings.nitrogen.StatusBarSettings"
             android:icon="@drawable/ic_settings_statusbar"/>
 
+        <!-- Quick Settings panel -->
+        <PreferenceScreen
+            android:key="quicksettings_general_category"
+            android:title="@string/quicksettings_title"
+            android:fragment="com.android.settings.nitrogen.QuickSettings"
+            android:icon="@drawable/ic_settings_quicksettings"/>
+
         <!-- Buttons -->
         <PreferenceScreen
             android:key="button_settings_category"

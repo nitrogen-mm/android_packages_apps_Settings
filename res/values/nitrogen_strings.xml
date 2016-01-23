@@ -72,6 +72,7 @@
     <string name="battery_title">Battery</string>
     <string name="battery2_summary">Customize battery icons and percentage</string>
     <string name="recents_panel_settings">Recent apps settings</string>
+    <string name="quicksettings_title">Quick Settings panel</string>
 
     <!-- Nitrogen OS categories -->
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>

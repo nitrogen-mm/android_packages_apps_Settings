@@ -58,6 +58,7 @@
     <string name="battery_title">Батарея</string>
     <string name="battery2_summary">Настройка иконки и процента батареи</string>
     <string name="recents_panel_settings">Настройка недавних приложений</string>
+    <string name="quicksettings_title">Панель быстрых настроек</string>
 
     <!-- Nitrogen OS categories -->
     <string name="display_category_batteryclock_options_title">Опции батареи и часов</string>
