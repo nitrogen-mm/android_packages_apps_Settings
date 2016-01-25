@@ -698,4 +698,8 @@
     <string name="battery_saver_notif_summary">Показывать уведомление при включении режима энергосбережения</string>
     <string name="battery_low_notif_title">Уведомление о низком заряде батареи</string>
     <string name="battery_low_notif_summary">Показать уведомление о низком заряде батареи</string>
+
+    <!-- Volume button orientation based on current rotation -->
+    <string name="swap_volume_buttons_title">Автоповорот</string>
+    <string name="swap_volume_buttons_summary">Менять назначение кнопок регулировки громкости согласно ориентации экрана</string>
 </resources>
