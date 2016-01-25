@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 Nitrogen OS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
 <PreferenceScreen
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory
         android:key="category_wakeup_options"
         android:title="@string/display_category_wakeup_options_title" >
 
-    <SwitchPreference
-        android:key="volume_rocker_wake"
-        android:summary="@string/volume_rocker_wake_summary"
-        android:title="@string/volume_rocker_wake_title" />
+        <SwitchPreference
+            android:key="volume_rocker_wake"
+            android:summary="@string/volume_rocker_wake_summary"
+            android:title="@string/volume_rocker_wake_title" />
 
     </PreferenceCategory>
 
@@ -18,37 +32,37 @@
          android:key="category_media_options"
          android:title="@string/display_category_media_options_title" >
 
-     <SwitchPreference
-        android:key="volbtn_music_controls"
-        android:title="@string/volbtn_music_controls_title"
-        android:summary="@string/volbtn_music_controls_summary"
-        android:persistent="false"
-        android:defaultValue="true" />
+        <SwitchPreference
+            android:key="volbtn_music_controls"
+            android:title="@string/volbtn_music_controls_title"
+            android:summary="@string/volbtn_music_controls_summary"
+            android:persistent="false"
+            android:defaultValue="true" />
 
-    <SwitchPreference
-        android:key="volume_keys_control_media_stream"
-        android:title="@string/volume_keys_control_media_stream"
-        android:summary="@string/volume_keys_control_media_stream_summary"
-        android:defaultValue="false"
-        android:persistent="false" />
+        <SwitchPreference
+            android:key="volume_keys_control_media_stream"
+            android:title="@string/volume_keys_control_media_stream"
+            android:summary="@string/volume_keys_control_media_stream_summary"
+            android:defaultValue="false"
+            android:persistent="false" />
 
-     <com.android.settings.nitrogen.SystemSettingSwitchPreference
-        android:key="swap_volume_buttons"
-        android:title="@string/swap_volume_buttons_title"
-        android:summary="@string/swap_volume_buttons_summary"
-        android:defaultValue="false"/>
+        <com.android.settings.nitrogen.SystemSettingSwitchPreference
+            android:key="swap_volume_buttons"
+            android:title="@string/swap_volume_buttons_title"
+            android:summary="@string/swap_volume_buttons_summary"
+            android:defaultValue="false"/>
 
     </PreferenceCategory>
 
-     <PreferenceCategory
-            android:key="category_cursor_options"
-            android:title="@string/volume_rocker_other_title">
+    <PreferenceCategory
+        android:key="category_cursor_options"
+        android:title="@string/volume_rocker_other_title">
 
-     <com.android.settings.nitrogen.SystemSettingSwitchPreference
-        android:key="call_volume_answer"
-        android:title="@string/volume_answer_call_title"
-        android:summary="@string/volume_answer_call_summary"
-        android:defaultValue="false" />
+        <com.android.settings.nitrogen.SystemSettingSwitchPreference
+            android:key="call_volume_answer"
+            android:title="@string/volume_answer_call_title"
+            android:summary="@string/volume_answer_call_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 
