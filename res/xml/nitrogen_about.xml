@@ -202,6 +202,14 @@
                 android:data="https://github.com/cyanogen"/>
         </PreferenceScreen>
 
+        <PreferenceScreen
+            android:title="@string/nos_thanks14"
+            android:summary="@string/nos_thanks_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://4pda.ru/forum/index.php?showuser=1933412"/>
+        </PreferenceScreen>
+
     </PreferenceCategory>
 
 </PreferenceScreen>
