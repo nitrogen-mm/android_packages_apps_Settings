@@ -42,6 +42,7 @@ import android.widget.EditText;
 import com.android.internal.logging.MetricsLogger;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.nitrogen.SeekBarPreference;
 
 public class CarrierLabel extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -49,9 +50,11 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
 
     private static final String STATUS_BAR_CARRIER = "status_bar_carrier";
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
+    private static final String STATUS_BAR_CARRIER_FONT_SIZE  = "status_bar_carrier_font_size";
 
     private ListPreference mShowCarrierLabel;
     private PreferenceScreen mCustomCarrierLabel;
+    private SeekBarPreference mStatusBarCarrierSize;
 
     private String mCustomCarrierLabelText;
 
@@ -70,6 +73,11 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
         mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntry());
         mShowCarrierLabel.setOnPreferenceChangeListener(this);
         mCustomCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
+
+        mStatusBarCarrierSize = (SeekBarPreference) findPreference(STATUS_BAR_CARRIER_FONT_SIZE);
+        mStatusBarCarrierSize.setValue(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.STATUS_BAR_CARRIER_FONT_SIZE, 14));
+        mStatusBarCarrierSize.setOnPreferenceChangeListener(this);
 
         updatepreferences();
 
@@ -108,6 +116,11 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
             mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntries()[index]);
             updatepreferences();
             return true;
+         } else if (preference == mStatusBarCarrierSize) {
+            int width = ((Integer)newValue).intValue();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_CARRIER_FONT_SIZE, width);
+            return true;
          }
          return false;
     }
@@ -124,8 +137,10 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
 
         if (carrierlabel) {
             mCustomCarrierLabel.setEnabled(true);
+            mStatusBarCarrierSize.setEnabled(true);
         } else {
             mCustomCarrierLabel.setEnabled(false);
+            mStatusBarCarrierSize.setEnabled(false);
         }
     }
 
