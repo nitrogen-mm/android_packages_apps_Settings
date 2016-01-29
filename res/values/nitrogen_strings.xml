@@ -745,4 +745,8 @@
     <string name="less_notification_sounds_1m">1 minute</string>
     <string name="less_notification_sounds_2m">2 minutes</string>
     <string name="less_notification_sounds_5m">5 minutes</string>
+
+    <!-- Quick Settings edit icon -->
+    <string name="quick_settings_edit_icon_title">QS edit icon</string>
+    <string name="quick_settings_edit_icon_summary">Controls the quick settings edit icon in the drawer</string>
 </resources>

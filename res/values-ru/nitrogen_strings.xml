@@ -722,4 +722,8 @@
     <string name="less_notification_sounds_1m">1 минута</string>
     <string name="less_notification_sounds_2m">2 минуты</string>
     <string name="less_notification_sounds_5m">5 минут</string>
+
+    <!-- Quick Settings edit icon -->
+    <string name="quick_settings_edit_icon_title">Кнопка быстрого редактирования</string>
+    <string name="quick_settings_edit_icon_summary">Отображать кнопку редактирования при развертой панели</string>
 </resources>
