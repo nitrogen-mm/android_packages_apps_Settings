@@ -220,8 +220,6 @@
 
     <!-- Camera sound switch -->
     <string name="camera_sounds_title">Звук затвора камеры</string>
-    <string name="camera_sounds_summary">Включить системный звук затвора камеры</string>
-    <string name="camera_sound_warning_dialog_text">Отключение звука затвора камеры запрещается в некоторых регионах! Пожалуйста, проверьте действующее законодательсво вашей страны.</string>
 
     <!-- Generic strings -->
     <string name="ok_string">ОК</string>

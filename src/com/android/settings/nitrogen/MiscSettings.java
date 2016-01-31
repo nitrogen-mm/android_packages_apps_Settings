@@ -29,9 +29,6 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
-    private static final int DLG_CAMERA_SOUND = 1;
-    private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
-    private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
     private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
@@ -41,7 +38,6 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
 
     private SwitchPreference mKillAppLongPressBack;
-    private SwitchPreference mCameraSounds;
     private ListPreference mRecentsClearAllLocation;
     private SwitchPreference mRecentsClearAll;
     private ListPreference mScrollingCachePref;
@@ -55,10 +51,6 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.nitrogen_settings_misc);
 
         ContentResolver resolver = getActivity().getContentResolver();
-
-        mCameraSounds = (SwitchPreference) findPreference(KEY_CAMERA_SOUNDS);
-        mCameraSounds.setChecked(SystemProperties.getBoolean(PROP_CAMERA_SOUND, true));
-        mCameraSounds.setOnPreferenceChangeListener(this);
 
         // kill-app long press back
         mKillAppLongPressBack = (SwitchPreference) findPreference(KILL_APP_LONGPRESS_BACK);
@@ -102,14 +94,6 @@ public class MiscSettings extends SettingsPreferenceFragment implements
             Settings.Secure.putInt(getContentResolver(), KILL_APP_LONGPRESS_BACK,
                     value ? 1 : 0);
             return true;
-        } else if (preference == mCameraSounds) {
-           if ((Boolean) objValue) {
-               SystemProperties.set(PROP_CAMERA_SOUND, "1");
-               return true;
-           } else {
-              showDialogInner(DLG_CAMERA_SOUND);
-              return true;
-        	 }
         } else if (preference == mRecentsClearAllLocation) {
             int location = Integer.valueOf((String) objValue);
             int index = mRecentsClearAllLocation.findIndexOfValue((String) objValue);
@@ -137,63 +121,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
             mImmersiveRecents.setValue(String.valueOf(objValue));
             mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
 	}
-	return false;
-    }
-
-    private void showDialogInner(int id) {
-        DialogFragment newFragment = MyAlertDialogFragment.newInstance(id);
-        newFragment.setTargetFragment(this, 0);
-        newFragment.show(getFragmentManager(), "dialog " + id);
-    }
-
-    public static class MyAlertDialogFragment extends DialogFragment {
-
-        public static MyAlertDialogFragment newInstance(int id) {
-            MyAlertDialogFragment frag = new MyAlertDialogFragment();
-            Bundle args = new Bundle();
-            args.putInt("id", id);
-            frag.setArguments(args);
-            return frag;
-        }
-
-        MiscSettings getOwner() {
-            return (MiscSettings) getTargetFragment();
-        }
-
-        @Override
-        public Dialog onCreateDialog(Bundle savedInstanceState) {
-            int id = getArguments().getInt("id");
-            switch (id) {
-                case DLG_CAMERA_SOUND:
-                    return new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.attention)
-                    .setMessage(R.string.camera_sound_warning_dialog_text)
-                    .setPositiveButton(R.string.dlg_ok,
-                        new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            SystemProperties.set(PROP_CAMERA_SOUND, "0");
-                        }
-                    })
-                    .setNegativeButton(R.string.dlg_cancel,
-                        new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    })
-                    .create();
-            }
-            throw new IllegalArgumentException("unknown id " + id);
-        }
-
-        @Override
-        public void onCancel(DialogInterface dialog) {
-            int id = getArguments().getInt("id");
-            switch (id) {
-                case DLG_CAMERA_SOUND:
-                    getOwner().mCameraSounds.setChecked(true);
-                    break;
-            }
-        }
+    return false;
     }
 
     @Override
