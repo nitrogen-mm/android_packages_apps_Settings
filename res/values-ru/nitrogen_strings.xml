@@ -669,11 +669,11 @@
     <string name="lock_clock_font_title">Шрифт часов</string>
     <string name="lock_clock_font_summary">Сменить шрифт часов на экране блокировки</string>
     <string name="lock_clock_font_dialog_title">Выберите шрифт</string>
-    <string name="lock_clock_font_normal">Обычный (по умолчанию)</string>
+    <string name="lock_clock_font_normal">Обычный</string>
     <string name="lock_clock_font_bold">Жирный</string>
     <string name="lock_clock_font_italic">Курсив</string>
     <string name="lock_clock_font_bold_italic">Жирный курсив</string>
-    <string name="lock_clock_font_light_normal">Легкий</string>
+    <string name="lock_clock_font_light_normal">Легкий (по умолчанию)</string>
     <string name="lock_clock_font_light_italic">Легкий курсив</string>
     <string name="lock_clock_font_thin_normal">Тонкий</string>
     <string name="lock_clock_font_thin_italic">Тонкий курсив</string>
