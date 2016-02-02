@@ -64,7 +64,6 @@
     <string name="display_category_batteryclock_options_title">Опции батареи и часов</string>
     <string name="display_category_dtts_title">Двойное нажатие для сна</string>
     <string name="display_category_navbar_options_title">Опции панели навигации</string>
-    <string name="display_category_onscreen">Наэкранные кнопки</string>
     <string name="display_category_lockscreen_options_title">Опции экрана блокировки</string>
     <string name="display_category_statusbar_options_title">Опции строки состояния</string>
     <string name="display_category_wakeup_options_title">Опции пробуждения</string>
