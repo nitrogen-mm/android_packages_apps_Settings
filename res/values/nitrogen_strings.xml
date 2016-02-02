@@ -400,7 +400,10 @@
     <string name="navigation_bar_height_title">Navigation bar height</string>
     <string name="navigation_bar_height_landscape_title">Navigation bar height landscape</string>
     <string name="navigation_bar_width_title">Navigation bar width</string>
-    <string name="navigation_bar_size_48_dp">48 dp (default)</string>
+    <string name="navigation_bar_size_56_dp">56 dp</string>
+    <string name="navigation_bar_size_52_dp">52 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (default)</string>
+    <string name="navigation_bar_size_48_dp">48 dp</string>
     <string name="navigation_bar_size_44_dp">44 dp</string>
     <string name="navigation_bar_size_42_dp_default">42 dp (default)</string>
     <string name="navigation_bar_size_40_dp">40 dp</string>
