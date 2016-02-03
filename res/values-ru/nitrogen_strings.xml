@@ -764,4 +764,16 @@
     <string name="heads_up_time_out_6sec">6 секунд</string>
     <string name="heads_up_time_out_8sec">8 секунд</string>
     <string name="heads_up_time_out_10sec">10 секунд</string>
+
+    <!-- Heads Up Snooze -->
+    <string name="heads_up_snooze">Сон</string>
+    <string name="heads_up_snooze_summary">Уведомления не будут отображаться в течении следующих <xliff:g id="number">%d</xliff:g> минут</string>
+    <string name="heads_up_snooze_1min">1 мунута</string>
+    <string name="heads_up_snooze_5min">5 минут</string>
+    <string name="heads_up_snooze_10min">10 минут</string>
+    <string name="heads_up_snooze_15min">15 минут</string>
+    <string name="heads_up_snooze_20min">20 минут</string>
+    <string name="heads_up_snooze_30min">30 минут</string>
+    <string name="heads_up_snooze_45min">45 минут</string>
+    <string name="heads_up_snooze_60min">60 минут</string>
 </resources>
