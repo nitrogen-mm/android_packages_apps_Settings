@@ -39,6 +39,7 @@ import android.widget.CompoundButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.android.settings.ButtonSettings;
 import com.android.settings.R;
 
 public class ButtonBacklightBrightness extends DialogPreference implements
@@ -223,12 +224,18 @@ public class ButtonBacklightBrightness extends DialogPreference implements
 
     public boolean isButtonSupported() {
         final Resources res = getContext().getResources();
-        boolean hasAnyKey = res.getInteger(
-                com.android.internal.R.integer.config_deviceHardwareKeys) != 0;
+        final int deviceKeys = res.getInteger(
+                com.android.internal.R.integer.config_deviceHardwareKeys);
+        // All hardware keys besides volume and camera can possibly have a backlight
+        boolean hasBacklightKey = (deviceKeys & ButtonSettings.KEY_MASK_HOME) != 0
+                || (deviceKeys & ButtonSettings.KEY_MASK_BACK) != 0
+                || (deviceKeys & ButtonSettings.KEY_MASK_MENU) != 0
+                || (deviceKeys & ButtonSettings.KEY_MASK_ASSIST) != 0
+                || (deviceKeys & ButtonSettings.KEY_MASK_APP_SWITCH) != 0;
         boolean hasBacklight = res.getInteger(
                 com.android.internal.R.integer.config_buttonBrightnessSettingDefault) > 0;
 
-        return hasAnyKey && hasBacklight;
+        return hasBacklightKey && hasBacklight;
     }
 
     public boolean isKeyboardSupported() {
