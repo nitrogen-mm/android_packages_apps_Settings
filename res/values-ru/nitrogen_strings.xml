@@ -349,13 +349,10 @@
     <string name="quick_settings_vibrate_title">Вибрировать при нажатии</string>
     <string name="quick_settings_vibrate_summary">Вибрация при нажатии на плитку</string>
 
-    <!-- Quick Settings 4 columns -->
-    <string name="qs_four_columns_title">Отображать по четыре плитки в ряду</string>
-
     <!-- QuickSettings main tiles -->
     <string name="qs_main_tiles_title">Увеличить первый ряд</string>
     <string name="qs_main_tiles_summary_on">Две плитки в первом ряду</string>
-    <string name="qs_main_tiles_summary_off">Три или четыре плитки в каждом ряду</string>
+    <string name="qs_main_tiles_summary_off">Несколько плиток в каждом ряду</string>
 
     <!-- Force expanded notifications -->
     <string name="force_expanded_notifications_title">Принудительно развернутое уведомление</string>
@@ -725,4 +722,12 @@
 
     <string name="double_tap_to_sleep_lockscreen_title">Экран блокировки</string>
     <string name="double_tap_to_sleep_lockscreen_summary">Двойное нажатие в нижней части экрана блокировки для сна</string>
+
+    <!-- QS Tiles Columns -->
+    <string name="qs_num_columns_title">Число плиток в ряду</string>
+    <string name="qs_num_columns_showing">%1$s в ряду</string>
+    <string name="three_column">Три</string>
+    <string name="four_column">Четыре</string>
+    <string name="five_column">Пять</string>
+
 </resources>

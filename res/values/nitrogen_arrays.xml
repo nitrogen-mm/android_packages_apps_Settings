@@ -549,5 +549,18 @@
         <item>30000</item>
         <item>45000</item>
     </integer-array>
+
+    <!-- QS Tiles Columns -->
+    <string-array name="qs_num_columns_values" translatable="false">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="qs_num_columns_entries">
+        <item>@string/three_column</item>
+        <item>@string/four_column</item>
+        <item>@string/five_column</item>
+    </string-array>
 </resources>
 
