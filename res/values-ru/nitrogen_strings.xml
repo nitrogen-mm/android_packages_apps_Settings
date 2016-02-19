@@ -611,6 +611,8 @@
     <string name="status_bar_custom_header_title">Динамический фон заголовка</string>
     <string name="status_bar_custom_header_summary">Показывать изображение в заголовке панели уведомления в зависимости от времени суток</string>
     <string name="daylight_header_pack_title">Пакет изображений</string>
+    <string name="status_bar_custom_header_shadow_title">Тень</string>
+    <string name="status_bar_custom_header_shadow_summary">Включает тень для лучшей видимости  на ярких фонах</string>
 
     <!-- powermenu fragment -->
     <string name="power_menu_reboot_title">Перезагрузка</string>

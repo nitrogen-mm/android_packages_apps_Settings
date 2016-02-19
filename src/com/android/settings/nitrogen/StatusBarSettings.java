@@ -16,6 +16,7 @@ import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
 
+import com.android.settings.nitrogen.SeekBarPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import java.util.Locale;
@@ -24,6 +25,7 @@ import android.view.View;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import android.util.Log;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -36,10 +38,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final String CUSTOM_HEADER_IMAGE = "status_bar_custom_header";
     private static final String DAYLIGHT_HEADER_PACK = "daylight_header_pack";
     private static final String DEFAULT_HEADER_PACKAGE = "com.android.systemui";
+    private static final String CUSTOM_HEADER_IMAGE_SHADOW = "status_bar_custom_header_shadow";
 
     private PreferenceScreen mLockClock;
     private SwitchPreference mCustomHeaderImage;
     private ListPreference mDaylightHeaderPack;
+    private SeekBarPreference mHeaderShadow;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -86,6 +90,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mDaylightHeaderPack.setSummary(mDaylightHeaderPack.getEntry());
         mDaylightHeaderPack.setOnPreferenceChangeListener(this);
         mDaylightHeaderPack.setEnabled(customHeaderImage);
+
+        // header image shadows
+        mHeaderShadow = (SeekBarPreference) findPreference(CUSTOM_HEADER_IMAGE_SHADOW);
+        final int headerShadow = Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, 0);
+        mHeaderShadow.setValue((int)((headerShadow / 255) * 100));
+        mHeaderShadow.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -94,7 +105,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             final boolean value = ((SwitchPreference)preference).isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_CUSTOM_HEADER, value ? 1 : 0);
-            mDaylightHeaderPack.setEnabled(value);
             return true;
         }
         // If we didn't handle it, let preferences handle it.
@@ -109,6 +119,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                     Settings.System.STATUS_BAR_DAYLIGHT_HEADER_PACK, value);
             int valueIndex = mDaylightHeaderPack.findIndexOfValue(value);
             mDaylightHeaderPack.setSummary(mDaylightHeaderPack.getEntries()[valueIndex]);
+            return true;
+         } else if (preference == mHeaderShadow) {
+            Integer headerShadow = (Integer) objValue;
+            int realHeaderValue = (int) (((double) headerShadow / 100) * 255);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, realHeaderValue);
             return true;
         }
         return false;
