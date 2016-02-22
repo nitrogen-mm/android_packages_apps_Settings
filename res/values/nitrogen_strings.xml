@@ -755,4 +755,8 @@
     <string name="three_column">Three</string>
     <string name="four_column">Four</string>
     <string name="five_column">Five</string>
+
+    <!-- MTP Dirty Hack -->
+    <string name="enable_mtp_dirtyhack_title">MTP instead Charging</string>
+    <string name="enable_mtp_dirtyhack_summary">Enable MTP instead charging after connect to PC</string>
 </resources>

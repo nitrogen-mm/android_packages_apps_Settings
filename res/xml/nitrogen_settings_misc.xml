@@ -55,6 +55,12 @@
             android:summary="@string/disable_fc_notifications_summary"
             android:defaultValue="false" />
 
+        <com.android.settings.nitrogen.SystemSettingSwitchPreference
+            android:key="mtp_dirty_hack"
+            android:title="@string/enable_mtp_dirtyhack_title"
+            android:summary="@string/enable_mtp_dirtyhack_summary"
+            android:defaultValue="true" />
+
         <ListPreference
             android:key="media_scanner_on_boot"
             android:title="@string/media_scanner_on_boot_title"

@@ -732,4 +732,8 @@
     <string name="four_column">Четыре</string>
     <string name="five_column">Пять</string>
 
+    <!-- MTP Dirty Hack -->
+    <string name="enable_mtp_dirtyhack_title">MTP вместо зарядки</string>
+    <string name="enable_mtp_dirtyhack_summary">Включить MTP вместо зарядки при подключении к ПК</string>
+
 </resources>
