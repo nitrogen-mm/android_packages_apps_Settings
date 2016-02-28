@@ -89,7 +89,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mDaylightHeaderPack.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
         mDaylightHeaderPack.setSummary(mDaylightHeaderPack.getEntry());
         mDaylightHeaderPack.setOnPreferenceChangeListener(this);
-        mDaylightHeaderPack.setEnabled(customHeaderImage);
 
         // header image shadows
         mHeaderShadow = (SeekBarPreference) findPreference(CUSTOM_HEADER_IMAGE_SHADOW);
