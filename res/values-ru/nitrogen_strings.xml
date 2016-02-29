@@ -467,10 +467,6 @@
     <string name="adb_notify">Уведомление об отладке</string>
     <string name="adb_notify_summary">Показывать уведомление о включенном режиме отладки по USB или по сети</string>
 
-    <!-- Show/hide headset icon -->
-    <string name="show_headset_icon_title">Показывать значок гарнитуры</string>
-    <string name="show_headset_icon_summary">Отобразить значок в строке состояния, когда гарнитура подключена</string>
-
     <!-- Media ducking -->
     <string name="interruptions_ignore_while_media_title">Не приглушать звук</string>
     <string name="interruptions_ignore_while_media_summary">Не снижать громкость воспроизведения мультимедиа при получении уведомлений</string>
@@ -735,5 +731,4 @@
     <!-- MTP Dirty Hack -->
     <string name="enable_mtp_dirtyhack_title">MTP вместо зарядки</string>
     <string name="enable_mtp_dirtyhack_summary">Включить MTP вместо зарядки при подключении к ПК</string>
-
 </resources>

@@ -105,12 +105,6 @@
             android:summary="@string/status_bar_notif_count_summary"
             android:defaultValue="false" />
 
-        <com.android.settings.nitrogen.SystemSettingSwitchPreference
-            android:key="show_headset_icon"
-            android:title="@string/show_headset_icon_title"
-            android:summary="@string/show_headset_icon_summary"
-            android:defaultValue="false" />
-			
     </PreferenceCategory>
 
     <PreferenceCategory
