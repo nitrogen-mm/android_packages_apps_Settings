@@ -409,6 +409,8 @@
     <string name="navigation_bar_size_24_dp">24 dp</string>
     <string name="navigation_bar_size_20_dp">20 dp</string>
     <string name="navigation_bar_size_0_dp">0 dp (off)</string>
+    <string name="navigation_bar_left_title">Left-handed mode</string>
+    <string name="navigation_bar_left_summary">Place the navigation bar on the left side of the screen in landscape mode</string>
 
     <!-- Navbar cursor buttons -->
     <string name="navigation_bar_arrow_keys_title">Show arrow keys while typing</string>

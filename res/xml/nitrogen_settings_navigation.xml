@@ -56,6 +56,12 @@
         android:summary="@string/navigation_bar_arrow_keys_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.nitrogen.SystemSettingSwitchPreference
+        android:key="navigation_bar_left"
+        android:title="@string/navigation_bar_left_title"
+        android:summary="@string/navigation_bar_left_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:key="category_navigation_options"
         android:title="@string/display_category_navbar_options_title" >

@@ -395,6 +395,8 @@
     <string name="navigation_bar_size_24_dp">24 dp</string>
     <string name="navigation_bar_size_20_dp">20 dp</string>
     <string name="navigation_bar_size_0_dp">0 dp (отключено)</string>
+    <string name="navigation_bar_left_title">Режим левши</string>
+    <string name="navigation_bar_left_summary">Отображать панель навигации слева в альбомной ориентации экрана</string>
 
     <!-- Navbar cursor buttons -->
     <string name="navigation_bar_arrow_keys_title">Перемещение курсора</string>
