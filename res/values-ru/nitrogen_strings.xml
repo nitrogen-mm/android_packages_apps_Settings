@@ -733,4 +733,8 @@
     <!-- MTP Dirty Hack -->
     <string name="enable_mtp_dirtyhack_title">MTP вместо зарядки</string>
     <string name="enable_mtp_dirtyhack_summary">Включить MTP вместо зарядки при подключении к ПК</string>
+
+    <!-- Fullscreen Keyboard -->
+    <string name="disable_fullscreen_keyboard_title">Отключить полноэкранный вид</string>
+    <string name="disable_fullscreen_keyboard_summary">Не отображать клавиатуру на полный экран в горизонтальной ориентации</string>
 </resources>
