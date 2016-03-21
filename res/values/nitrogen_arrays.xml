@@ -562,5 +562,44 @@
         <item>@string/four_column</item>
         <item>@string/five_column</item>
     </string-array>
+
+    <!-- Battery bar -->
+    <string-array name="battery_bar_entries">
+        <item>@string/batterybar_hide</item>
+        <item>@string/batterybar_statusbar</item>
+        <item>@string/batterybar_topofnavbar</item>
+        <item>@string/batterybar_bottomofnavbar</item>
+    </string-array>
+
+    <string-array name="battery_bar_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="battery_bar_style_entries">
+        <item>@string/batterybar_regular</item>
+        <item>@string/batterybar_center_mirrored</item>
+    </string-array>
+
+    <string-array name="battery_bar_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="battery_bar_thickness_entries" translatable="false">
+        <item>1 dp</item>
+        <item>2 dp</item>
+        <item>3 dp</item>
+        <item>4 dp</item>
+    </string-array>
+
+    <string-array name="battery_bar_thickness_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
 </resources>
 

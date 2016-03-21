@@ -28,6 +28,12 @@
             android:summary="@string/battery2_summary" />
 
         <PreferenceScreen
+            android:fragment="com.android.settings.nitrogen.BatteryBar"
+            android:key="battery_bar"
+            android:title="@string/battery_bar"
+            android:summary="@string/batterybar_summary" />
+
+        <PreferenceScreen
             android:fragment="com.android.settings.nitrogen.StatusBarClockStyle"
             android:key="clock_style_pref"
             android:title="@string/status_bar_clock"

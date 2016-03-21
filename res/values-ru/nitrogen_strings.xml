@@ -737,4 +737,20 @@
     <!-- Fullscreen Keyboard -->
     <string name="disable_fullscreen_keyboard_title">Отключить полноэкранный вид</string>
     <string name="disable_fullscreen_keyboard_summary">Не отображать клавиатуру на полный экран в горизонтальной ориентации</string>
+
+    <!-- Battery Bar -->
+    <string name="battery_bar_location">Расположение полосы батареи</string>
+    <string name="battery_bar_color">Цвет полосы батареи</string>
+    <string name="battery_bar">Полоса батареи</string>
+    <string name="battery_bar_style_title">Стиль полосы батареи</string>
+    <string name="battery_bar_thickness_title">Толщина полосы батареи</string>
+    <string name="battery_bar_animate_title">Анимация зарядки</string>
+    <string name="battery_bar_animate_summary">Изменение анимации зарядки может привести к негативным впечатлениям от использования. Включайте на своё усмотрение.</string>
+    <string name="batterybar_hide">Скрыть</string>
+    <string name="batterybar_statusbar">Строка состояния</string>
+    <string name="batterybar_topofnavbar">Верх панели навигации</string>
+    <string name="batterybar_bottomofnavbar">Низ панели навигации</string>
+    <string name="batterybar_regular">Обычный</string>
+    <string name="batterybar_center_mirrored">Зеркальный</string>
+    <string name="batterybar_summary">Настроить полосу батареи</string>
 </resources>
