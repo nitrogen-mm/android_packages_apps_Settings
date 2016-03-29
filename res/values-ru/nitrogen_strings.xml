@@ -615,6 +615,7 @@
     <!-- powermenu fragment -->
     <string name="power_menu_reboot_title">Перезагрузка</string>
     <string name="power_menu_screenshot_title">Скриншот</string>
+    <string name="power_menu_torch_title">Фонарик</string>
     <string name="power_menu_airplane_title">Режим полета</string>
     <string name="power_menu_users_title">Пользователи</string>
     <string name="power_menu_search_title">Поиск</string>
