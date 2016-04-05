@@ -88,7 +88,7 @@
 		
         <Preference
             android:title="@string/nos_dev_donate_total"
-            android:summary="4">
+            android:summary="6">
         </Preference>
 
     </PreferenceCategory>
