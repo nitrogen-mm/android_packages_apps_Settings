@@ -82,7 +82,7 @@
             android:summary="@string/nos_dev2_m">
         </Preference>
         
-		<Preference
+        <Preference
             android:title="@string/nos_dev3"
             android:summary="@string/nos_dev3_m">
         </Preference>
@@ -110,7 +110,7 @@
 		
         <Preference
             android:title="@string/nos_dev_donate_total"
-            android:summary="6">
+            android:summary="8">
         </Preference>
 
     </PreferenceCategory>
