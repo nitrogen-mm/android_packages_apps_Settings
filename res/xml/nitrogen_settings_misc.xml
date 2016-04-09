@@ -32,6 +32,13 @@
             android:summary="@string/kill_app_longpress_back_summary"/>
 
         <ListPreference
+            android:key="kill_app_longpress_timeout"
+            android:title="@string/kill_app_longpress_timeout_title"
+            android:entries="@array/kill_app_longpress_timeout_entries"
+            android:entryValues="@array/kill_app_longpress_timeout_values"
+            android:dependency="kill_app_longpress_back" />
+
+        <ListPreference
             android:key="pref_scrollingcache"
             android:dialogTitle="@string/pref_scrollingcache_title"
             android:title="@string/pref_scrollingcache_title"

@@ -777,4 +777,11 @@
     <string name="heads_up_snooze_30min">30 минут</string>
     <string name="heads_up_snooze_45min">45 минут</string>
     <string name="heads_up_snooze_60min">60 минут</string>
+
+    <!-- long press back to kill configurable timeout -->
+    <string name="kill_app_longpress_timeout_title">Задержка долгого нажатия</string>
+    <string name="timeout_2000">2 секунды (по умолчанию)</string>
+    <string name="timeout_1500">1,5 секунды</string>
+    <string name="timeout_1000">1 секунда</string>
+    <string name="timeout_500">0,5 секунды</string>
 </resources>

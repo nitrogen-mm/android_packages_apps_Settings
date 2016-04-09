@@ -29,6 +29,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
+    private static final String KILL_APP_LONGPRESS_TIMEOUT = "kill_app_longpress_timeout";
     private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
@@ -38,6 +39,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
 
     private SwitchPreference mKillAppLongPressBack;
+    private ListPreference mKillAppLongpressTimeout;
     private ListPreference mRecentsClearAllLocation;
     private SwitchPreference mRecentsClearAll;
     private ListPreference mScrollingCachePref;
@@ -58,6 +60,11 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         int killAppLongPressBack = Settings.Secure.getInt(getContentResolver(),
                 KILL_APP_LONGPRESS_BACK, 0);
         mKillAppLongPressBack.setChecked(killAppLongPressBack != 0);
+
+        // Back long press timeout
+        mKillAppLongpressTimeout = (ListPreference) findPreference(KILL_APP_LONGPRESS_TIMEOUT);
+        mKillAppLongpressTimeout.setOnPreferenceChangeListener(this);
+        updateKillAppLongpressTimeoutOptions();
 
         // clear all recents
         mRecentsClearAll = (SwitchPreference) findPreference(SHOW_CLEAR_ALL_RECENTS);
@@ -94,6 +101,9 @@ public class MiscSettings extends SettingsPreferenceFragment implements
             Settings.Secure.putInt(getContentResolver(), KILL_APP_LONGPRESS_BACK,
                     value ? 1 : 0);
             return true;
+        } else if (preference == mKillAppLongpressTimeout) {
+            writeKillAppLongpressTimeoutOptions(objValue);
+            return true;
         } else if (preference == mRecentsClearAllLocation) {
             int location = Integer.valueOf((String) objValue);
             int index = mRecentsClearAllLocation.findIndexOfValue((String) objValue);
@@ -122,6 +132,33 @@ public class MiscSettings extends SettingsPreferenceFragment implements
             mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
 	}
     return false;
+    }
+
+    private void writeKillAppLongpressTimeoutOptions(Object newValue) {
+        int index = mKillAppLongpressTimeout.findIndexOfValue((String) newValue);
+        int value = Integer.valueOf((String) newValue);
+        Settings.Secure.putInt(getActivity().getContentResolver(),
+                Settings.Secure.KILL_APP_LONGPRESS_TIMEOUT, value);
+        mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntries()[index]);
+    }
+
+    private void updateKillAppLongpressTimeoutOptions() {
+        String value = Settings.Secure.getString(getActivity().getContentResolver(),
+                Settings.Secure.KILL_APP_LONGPRESS_TIMEOUT);
+        if (value == null) {
+            value = "";
+        }
+
+        CharSequence[] values = mKillAppLongpressTimeout.getEntryValues();
+        for (int i = 0; i < values.length; i++) {
+            if (value.contentEquals(values[i])) {
+                mKillAppLongpressTimeout.setValueIndex(i);
+                mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntries()[i]);
+                return;
+            }
+        }
+        mKillAppLongpressTimeout.setValueIndex(0);
+        mKillAppLongpressTimeout.setSummary(mKillAppLongpressTimeout.getEntries()[0]);
     }
 
     @Override
