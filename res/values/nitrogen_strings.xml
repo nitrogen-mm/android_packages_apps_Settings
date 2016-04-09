@@ -24,6 +24,7 @@
     <string name="nos_dev1_summary">Main developer</string>
     <string name="nos_dev2">Mr.MEX (Valery)</string>
     <string name="nos_dev2_summary">Developer</string>
+    <string name="nos_dev3">Nazmul.rr</string>
     <string name="nos_thanks">Thanks</string>
     <string name="nos_thanks_summary">GitHub profile</string>
     <string name="nos_thanks1">zephiK</string>
@@ -40,8 +41,13 @@
     <string name="nos_thanks12">maxwen</string>
     <string name="nos_thanks13">cyanogen</string>
     <string name="nos_thanks14">GRR_OLEG</string>
+    <string name="nos_thanks15">nazmul.rr</string>
     <string name="nos_donate_developers">Donate</string>
     <string name="nos_dev_donate_total">Total donations</string>
+    <string name="nos_maintainers">Maintainers</string>
+    <string name="nos_dev1_m">LG Optimus G (geehrc)</string>
+    <string name="nos_dev2_m">LG Optimus G (geehrc,geeb), Google Nexus 4,5, Android One (Sprout 4,8)</string>
+    <string name="nos_dev3_m">Android One (Sprout 4,8)</string>
 
     <!-- Changelog -->
     <string name="changelog_title">Changelog</string>

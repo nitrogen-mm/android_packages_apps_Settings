@@ -66,7 +66,29 @@
         </PreferenceScreen>
 
     </PreferenceCategory>
-	
+
+    <!-- Maintainers -->
+    <PreferenceCategory
+        android:key="category_nitrogen_maintainers"
+        android:title="@string/nos_maintainers">
+		
+        <Preference
+            android:title="@string/nos_dev1"
+            android:summary="@string/nos_dev1_m">
+        </Preference>
+		
+        <Preference
+            android:title="@string/nos_dev2"
+            android:summary="@string/nos_dev2_m">
+        </Preference>
+        
+		<Preference
+            android:title="@string/nos_dev3"
+            android:summary="@string/nos_dev3_m">
+        </Preference>
+
+    </PreferenceCategory>
+
     <!-- Donate -->
     <PreferenceCategory
         android:key="category_nitrogen_donate"
@@ -208,6 +230,14 @@
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="http://4pda.ru/forum/index.php?showuser=1933412"/>
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:title="@string/nos_thanks15"
+            android:summary="@string/nos_thanks_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/nazmulhasan12"/>
         </PreferenceScreen>
 
     </PreferenceCategory>

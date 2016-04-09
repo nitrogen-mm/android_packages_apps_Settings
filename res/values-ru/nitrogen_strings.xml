@@ -27,6 +27,7 @@
     <string name="nos_thanks_summary">Профиль на GitHub</string>
     <string name="nos_donate_developers">Поддержка разработчика</string>
     <string name="nos_dev_donate_total">Всего пожертвований</string>
+    <string name="nos_maintainers">Специалисты по обслуживанию</string>
 
     <!-- Changelog -->
     <string name="changelog_title">Список изменений</string>
