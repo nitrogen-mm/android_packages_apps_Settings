@@ -110,7 +110,7 @@
 		
         <Preference
             android:title="@string/nos_dev_donate_total"
-            android:summary="8">
+            android:summary="9">
         </Preference>
 
     </PreferenceCategory>
