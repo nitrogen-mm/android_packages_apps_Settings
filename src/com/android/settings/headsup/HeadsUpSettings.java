@@ -236,8 +236,9 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
     }
 
     private void updateHeadsUpSnoozeSummary(int value) {
-        String summary = getResources().getString(R.string.heads_up_snooze_summary,
-                value / 60000);
+        String summary = value != 0
+                ? getResources().getString(R.string.heads_up_snooze_summary, value / 60 / 1000)
+                : getResources().getString(R.string.heads_up_snooze_disabled_summary);
         mHeadsUpSnooze.setSummary(summary);
     }
 
