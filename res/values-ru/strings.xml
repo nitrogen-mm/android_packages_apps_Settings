@@ -1428,6 +1428,14 @@
     <string name="no_running_services" msgid="2059536495597645347">"Ничего не запущено."</string>
     <string name="service_started_by_app" msgid="818675099014723551">"Запущено приложением."</string>
 
+    <!-- App Ops Categories -->
+    <string name="app_ops_cat_location">Местоположение</string>
+    <string name="app_ops_cat_personal">Личные данные</string>
+    <string name="app_ops_cat_messaging">SMS/MMS</string>
+    <string name="app_ops_cat_media">Мультимедиа</string>
+    <string name="app_ops_cat_device">Устройство</string>
+    <string name="app_ops_cat_bootup">Автозагрузка</string>
+
     <!-- App ops requests -->
     <string name="app_ops_access_camera">камера</string>
     <string name="app_ops_access_location">местоположение</string>
@@ -1489,6 +1497,7 @@
     <string name="app_ops_write_external_storage">записать на внеш. носитель</string>
     <string name="app_ops_turn_on_screen">включить экран</string>
     <string name="app_ops_get_accounts">получить аккаунт</string>
+    <string name="app_ops_boot_completed">автозагрузка</string>
 
     <!-- no translation found for service_client_name (4037193625611815517) -->
     <skip />

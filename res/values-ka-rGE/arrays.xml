@@ -253,13 +253,6 @@
     <item msgid="3738430123799803530">"შეცვლადი SD ბარათი"</item>
     <item msgid="4498124044785815005">"გადაწყვიტოს სისტემამ"</item>
   </string-array>
-  <string-array name="app_ops_categories">
-    <item msgid="6358963769537892925">"მდებარეობა"</item>
-    <item msgid="255608127647030286">"პირადი"</item>
-    <item msgid="4588829735729884491">"შეტყობინებები"</item>
-    <item msgid="886742181977884584">"მედია"</item>
-    <item msgid="7924928667052300589">"მოწყობილობა"</item>
-  </string-array>
   <string-array name="long_press_timeout_selector_titles">
     <item msgid="3511504869290423954">"მოკლე"</item>
     <item msgid="2560532955514699713">"საშუალო"</item>

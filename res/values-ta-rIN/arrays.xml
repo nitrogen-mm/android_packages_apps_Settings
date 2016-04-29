@@ -253,13 +253,6 @@
     <item msgid="3738430123799803530">"அகற்றப்படக்கூடிய SD கார்டு"</item>
     <item msgid="4498124044785815005">"அமைப்பு தீர்மானிக்கட்டும்"</item>
   </string-array>
-  <string-array name="app_ops_categories">
-    <item msgid="6358963769537892925">"இருப்பிடம்"</item>
-    <item msgid="255608127647030286">"தனிப்பட்டவை"</item>
-    <item msgid="4588829735729884491">"மெசேஜ்"</item>
-    <item msgid="886742181977884584">"ஊடகம்"</item>
-    <item msgid="7924928667052300589">"சாதனம்"</item>
-  </string-array>
   <string-array name="long_press_timeout_selector_titles">
     <item msgid="3511504869290423954">"குறுகியது"</item>
     <item msgid="2560532955514699713">"நடுத்தரம்"</item>

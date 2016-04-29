@@ -253,13 +253,6 @@
     <item msgid="3738430123799803530">"Kadi ya SD inayoondolewa"</item>
     <item msgid="4498124044785815005">"Wacha mfumo uamue"</item>
   </string-array>
-  <string-array name="app_ops_categories">
-    <item msgid="6358963769537892925">"Eneo"</item>
-    <item msgid="255608127647030286">"Binafsi"</item>
-    <item msgid="4588829735729884491">"Utumaji ujumbe"</item>
-    <item msgid="886742181977884584">"Vyombo vya Habari"</item>
-    <item msgid="7924928667052300589">"Kifaa"</item>
-  </string-array>
   <string-array name="long_press_timeout_selector_titles">
     <item msgid="3511504869290423954">"Fupi"</item>
     <item msgid="2560532955514699713">"Wastani"</item>

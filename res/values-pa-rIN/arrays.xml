@@ -253,13 +253,6 @@
     <item msgid="3738430123799803530">"ਹਟਾਉਣਯੋਗ SD ਕਾਰਡ"</item>
     <item msgid="4498124044785815005">"ਸਿਸਟਮ ਨੂੰ ਨਿਰਧਾਰਿਤ ਕਰਨ ਦਿਓ"</item>
   </string-array>
-  <string-array name="app_ops_categories">
-    <item msgid="6358963769537892925">"ਨਿਰਧਾਰਿਤ ਸਥਾਨ"</item>
-    <item msgid="255608127647030286">"ਨਿੱਜੀ"</item>
-    <item msgid="4588829735729884491">"ਮੈਸੇਂਜ਼ਿੰਗ"</item>
-    <item msgid="886742181977884584">"ਮੀਡੀਆ"</item>
-    <item msgid="7924928667052300589">"ਡਿਵਾਈਸ:"</item>
-  </string-array>
   <string-array name="long_press_timeout_selector_titles">
     <item msgid="3511504869290423954">"ਛੋਟਾ"</item>
     <item msgid="2560532955514699713">"ਮੱਧਮ"</item>

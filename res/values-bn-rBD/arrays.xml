@@ -253,13 +253,6 @@
     <item msgid="3738430123799803530">"অপসারণযোগ্য SD কার্ড"</item>
     <item msgid="4498124044785815005">"সিস্টেমকে সিদ্ধান্ত নিতে দিন"</item>
   </string-array>
-  <string-array name="app_ops_categories">
-    <item msgid="6358963769537892925">"অবস্থান"</item>
-    <item msgid="255608127647030286">"ব্যক্তিগত"</item>
-    <item msgid="4588829735729884491">"বার্তাপ্রেরণ"</item>
-    <item msgid="886742181977884584">"মাধ্যম"</item>
-    <item msgid="7924928667052300589">"ডিভাইস"</item>
-  </string-array>
   <string-array name="long_press_timeout_selector_titles">
     <item msgid="3511504869290423954">"স্বল্প"</item>
     <item msgid="2560532955514699713">"মাঝারি"</item>

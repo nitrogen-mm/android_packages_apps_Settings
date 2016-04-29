@@ -253,13 +253,6 @@
     <item msgid="3738430123799803530">"Izņemama SD karte"</item>
     <item msgid="4498124044785815005">"Ļaut sistēmai izlemt"</item>
   </string-array>
-  <string-array name="app_ops_categories">
-    <item msgid="6358963769537892925">"Atrašanās vieta"</item>
-    <item msgid="255608127647030286">"Privāti"</item>
-    <item msgid="4588829735729884491">"Ziņojumapmaiņa"</item>
-    <item msgid="886742181977884584">"Multivide"</item>
-    <item msgid="7924928667052300589">"Ierīce"</item>
-  </string-array>
   <string-array name="long_press_timeout_selector_titles">
     <item msgid="3511504869290423954">"Īss"</item>
     <item msgid="2560532955514699713">"Vidējs"</item>
