@@ -3361,6 +3361,7 @@
     <string name="app_ops_write_external_storage">write ext. stor.</string>
     <string name="app_ops_turn_on_screen">turn screen on</string>
     <string name="app_ops_get_accounts">device accounts</string>
+    <string name="app_ops_boot_completed">auto start</string>
 
     <!-- [CHAR LIMIT=25] Text shown when there are no default Apps -->
     <string name="no_default_apps">No default Apps.</string>

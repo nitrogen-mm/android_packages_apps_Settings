@@ -634,6 +634,7 @@
         <item>Messaging</item>
         <item>Media</item>
         <item>Device</item>
+        <item>Bootup</item>
     </string-array>
 
     <!-- User display names for app ops codes -->
@@ -766,6 +767,8 @@
 	<item>@string/app_ops_get_accounts</item>
 	<!-- OP_ALARM_WAKEUP -->
 	<item>@string/app_ops_alarm_wakeup</item>
+	<!-- OP_BOOT_COMPLETED -->
+	<item>@string/app_ops_boot_completed</item>
     </string-array>
 
     <!-- Titles for the list of long press timeout options. -->
