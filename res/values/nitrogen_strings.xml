@@ -47,7 +47,7 @@
     <string name="nos_maintainers">Maintainers</string>
     <string name="nos_dev1_m">LG Optimus G (geehrc)</string>
     <string name="nos_dev2_m">LG Optimus G (geehrc, geeb), Google Nexus 4 (mako)</string>
-    <string name="nos_dev3_m">Android One (Sprout 4, 8)</string>
+    <string name="nos_dev3_m">Android One (Sprout 4, 8), Google Nexus 5X (bullhead)</string>
     <string name="nos_dev4_m">Google Nexus 5 (hammerhead)</string>
 
     <!-- Changelog -->
