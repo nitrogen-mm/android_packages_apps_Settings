@@ -281,6 +281,8 @@
     <string name="network_traffic_autohide">Auto hide</string>
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
+    <string name="network_traffic_hidearrow_title">Hide arrows</string>
+    <string name="network_traffic_hidearrow_summary">Hide the traffic monitor activity arrows</string>
 
     <!-- Weather in status bar -->
     <string name="status_bar_show_weather_title">Show weather</string>

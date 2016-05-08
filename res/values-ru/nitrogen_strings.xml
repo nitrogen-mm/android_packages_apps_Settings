@@ -261,6 +261,8 @@
     <string name="network_traffic_autohide">Скрывать автоматически</string>
     <string name="network_traffic_autohide_summary">Скрывать индикатор сетевого трафика, когда сеть неактивна</string>
     <string name="network_traffic_autohide_threshold">Порог неактивности</string>
+    <string name="network_traffic_hidearrow_title">Скрыть стрелки</string>
+    <string name="network_traffic_hidearrow_summary">Скрыть стрелки в индикаторе трафика</string>
 
     <!-- Weather in status bar -->
     <string name="status_bar_show_weather_title">Показать погоду</string>
