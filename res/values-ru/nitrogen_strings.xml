@@ -22,12 +22,11 @@
     <string name="nos_developers">Разработчики</string>
     <string name="nos_dev1_summary">Главный разработчик</string>
     <string name="nos_dev2_summary">Разработчик</string>
-    <string name="nos_developers_summary">Разработчик</string>
     <string name="nos_thanks">Благодарности</string>
     <string name="nos_thanks_summary">Профиль на GitHub</string>
     <string name="nos_donate_developers">Поддержка разработчика</string>
     <string name="nos_dev_donate_total">Всего пожертвований</string>
-    <string name="nos_maintainers">Специалисты по обслуживанию</string>
+    <string name="nos_maintainers">Ответственные за сборку</string>
 
     <!-- Changelog -->
     <string name="changelog_title">Список изменений</string>
@@ -81,19 +80,19 @@
     <string name="kernel_auditor">Настройка ядра</string>
 
     <!-- Dev Options Enabled by Default -->
-    <string name="show_dev_already_enabled">Не нужно, настройки для разработчика активированы по умлочанию.</string>
+    <string name="show_dev_already_enabled">Настройки для разработчика активированы по умолчанию.</string>
 
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Навигационный бар</string>
     <string name="double_tap_sleep_nav_bar_summary">Двойное нажатие по навигационному бару для сна</string>
 
     <!-- kill app long press back -->
-    <string name="kill_app_longpress_back">Закрыть приложение кнопкой назад</string>
-    <string name="kill_app_longpress_back_summary">Закрыть приложение долгим нажатием на кнопку назад</string>
+    <string name="kill_app_longpress_back">Закрыть приложение</string>
+    <string name="kill_app_longpress_back_summary">Закрыть приложение долгим нажатием на кнопку «Назад»</string>
 
     <!-- Volume rocker wake -->
     <string name="volume_rocker_wake_title">Пробуждение кнопками громкости</string>
-    <string name="volume_rocker_wake_summary">При нажатии на кнопки громкости устройство пробудится</string>
+    <string name="volume_rocker_wake_summary">Вывести устройство из сна нажатием кнопок громкости</string>
 
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Стиль батареи</string>
@@ -114,11 +113,11 @@
     <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
     <string name="debug_LAN_category">Настройки LAN</string>
     <!-- Hostname setting -->
-    <string name="device_hostname">Имя хоста устройства</string>
+    <string name="device_hostname">Имя устройства</string>
 
     <!-- Three finger screenshot gesture -->
     <string name="three_finger_gesture">Жест тремя пальцами</string>
-    <string name="three_finger_gesture_summary">Провести тремя пальцами чтобы сделать скриншот</string>
+    <string name="three_finger_gesture_summary">Проведите тремя пальцами для создания скриншота</string>
 
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Опции пробуждения</string>
@@ -209,7 +208,7 @@
     <!-- Volume rocker music seek options -->
     <string name="volbtn_music_controls_title">Управление плеером</string>
     <string name="volbtn_music_controls_summary">Переключать треки долгим нажатием кнопок громкости при выключенном экране</string>
-    <string name="volume_button_toggle_info">Должно быть отключено пробуждение</string>
+    <string name="volume_button_toggle_info">Пробуждение кнопками регулировки громкости должно быть отключено</string>
 
     <!-- Lock screen settings -->
     <string name="lockscreen_settings_title">Обои экрана блокировки</string>
@@ -245,7 +244,6 @@
     <!-- Network traffic -->
     <string name="network_traffic_title">Индикатор сетевого трафика</string>
     <string name="show_network_traffic_state">Показывать скорость передачи данных</string>
-    <string name="network_traffic_summary">Настройка индикатора сетевого трафика в строке состояния</string>
     <string name="show_network_traffic_unit">Единицы измерения</string>
     <string name="show_network_traffic_frequency">Частота обновления</string>
     <string name="show_network_traffic_disable">Отключено</string>
@@ -265,12 +263,12 @@
     <string name="network_traffic_hidearrow_summary">Скрыть стрелки в индикаторе трафика</string>
 
     <!-- Weather in status bar -->
-    <string name="status_bar_show_weather_title">Показать погоду</string>
-    <string name="status_bar_show_weather_summary">Отображение погоды в статус баре заголовка</string>
+    <string name="status_bar_show_weather_title">Сведения о погоде</string>
+    <string name="status_bar_show_weather_summary">Показывать погоду над панелью быстрых настроек</string>
 
      <!--- Lock clock -->
     <string name="lock_clock_title">Виджет часов</string>
-    <string name="lock_clock_summary">Посмотреть и изменить виджет \'cLock\', как он будет отображаться на дисплее</string>
+    <string name="lock_clock_summary">Просмотр или изменение настроек отображения виджета «cLock» на главном экране или экране блокировки</string>
     <string name="weather_clock_title">Погода в строке состояния</string>
 
     <!-- Lockscreen weather -->
@@ -345,8 +343,8 @@
     <string name="smart_pulldown_all">Без удаляемых и постоянных</string>
 
     <!-- Battery saver color -->
-    <string name="battery_saver_color_title">Цвет предупреждения</string>
-    <string name="battery_saver_color_summary">Включить оранжевый статус - панели навигации, когда когда включена опция сбережения энергии</string>
+    <string name="battery_saver_color_title">Цветовое оповещение</string>
+    <string name="battery_saver_color_summary">Окрасить строку состояния и панель навигации в оранжевый, когда активирован режим энергосбережения</string>
 
     <!-- Quick Settings haptic feedback -->
     <string name="quick_settings_vibrate_title">Вибрировать при нажатии</string>
@@ -374,8 +372,8 @@
     <string name="mem_info">Объём оперативной памяти</string>
 
     <!-- Show/Hide Search Bar -->
-    <string name="recents_show_searchbar">Включить панель поиска в меню недавних</string>
-    <string name="recents_show_searchbar_summary">Включить/отключить панель поиска в меню недавних</string>
+    <string name="recents_show_searchbar">Панель поиска</string>
+    <string name="recents_show_searchbar_summary">Включить/отключить панель поиска в меню недавних приложений</string>
 
     <!-- Navigation bar -->
     <string name="navigation_bar_category">Панель навигации</string>
@@ -533,7 +531,6 @@
     <string name="trigger_bottom_title">Высота области вызова</string>
     <string name="trigger_bottom_summary">Установите высоту области вызова</string>
     <string name="trigger_width_summary">Установите ширину области вызова</string>
-    <string name="trigger_category">Область вызова</string>
 
     <!-- WiFi auto-configure priorities -->
     <string name="wifi_auto_config_priorities">Автовыбор приоритета</string>
@@ -595,8 +592,8 @@
     <string name="expanded_desktop_title">Настройки расширенного экрана</string>
 
     <!-- Lockscreen see through -->
-    <string name="lockscreen_see_through_title">Размытие Экрана блокировки</string>
-    <string name="lockscreen_see_through_summary">Размывает и выводит содержимое позади Экрана блокировки.</string>
+    <string name="lockscreen_see_through_title">Прозрачный экран</string>
+    <string name="lockscreen_see_through_summary">Отображение содержимого за экраном блокировки</string>
     <string name="lockscreen_blur_radius">Интенсивность размытия</string>
 
     <!-- Volume Steps -->
