@@ -26,18 +26,6 @@
             android:fragment="com.android.settings.nitrogen.AppCircleBar"
             android:title="@string/app_circle_bar_title" />
 
-        <SwitchPreference
-            android:key="kill_app_longpress_back"
-            android:title="@string/kill_app_longpress_back"
-            android:summary="@string/kill_app_longpress_back_summary"/>
-
-        <ListPreference
-            android:key="kill_app_longpress_timeout"
-            android:title="@string/kill_app_longpress_timeout_title"
-            android:entries="@array/kill_app_longpress_timeout_entries"
-            android:entryValues="@array/kill_app_longpress_timeout_values"
-            android:dependency="kill_app_longpress_back" />
-
         <ListPreference
             android:key="pref_scrollingcache"
             android:dialogTitle="@string/pref_scrollingcache_title"
@@ -73,48 +61,6 @@
             android:title="@string/media_scanner_on_boot_title"
             android:entries="@array/media_scanner_on_boot_entries"
             android:entryValues="@array/media_scanner_on_boot_values"
-            android:persistent="false" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="recents_panel"
-        android:title="@string/recents_panel_settings" >
-
-        <com.android.settings.nitrogen.SystemSettingSwitchPreference
-            android:key="show_clear_all_recents"
-            android:title="@string/show_clear_all_recents_button_title"
-            android:summary="@string/show_clear_all_recents_button_summary"
-            android:defaultValue="true" />
-
-        <ListPreference
-            android:key="recents_clear_all_location"
-            android:title="@string/recents_clear_all_location_title"
-            android:entries="@array/recents_clear_all_location_entries"
-            android:entryValues="@array/recents_clear_all_location_values"
-            android:defaultValue="3"
-            android:dependency="show_clear_all_recents" />
-
-        <com.android.settings.nitrogen.SystemSettingSwitchPreference
-            android:key="recents_clear_all_dismiss_all"
-            android:title="@string/recents_clear_all_dismiss_all_title"
-            android:summary="@string/recents_clear_all_dismiss_all_summary"
-            android:defaultValue="true"
-            android:dependency="show_clear_all_recents" />
-
-        <com.android.settings.nitrogen.SystemSettingSwitchPreference
-            android:key="recents_show_search_bar"
-            android:title="@string/recents_show_searchbar"
-            android:summary="@string/recents_show_searchbar_summary"
-            android:defaultValue="false" />
-
-        <ListPreference
-            android:key="immersive_recents"
-            android:title="@string/immersive_recents_title"
-            android:dialogTitle="@string/immersive_recents_dialog_title"
-            android:entries="@array/immersive_recents_entries"
-            android:entryValues="@array/immersive_recents_values"
-            android:summary="@string/immersive_recents_summary"
             android:persistent="false" />
 
     </PreferenceCategory>

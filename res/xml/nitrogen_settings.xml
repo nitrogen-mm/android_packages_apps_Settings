@@ -71,6 +71,13 @@
             android:fragment="com.android.settings.nitrogen.PowerMenuActions"
             android:icon="@drawable/ic_settings_powermenu"/>
 
+        <!-- Recents -->
+        <PreferenceScreen
+            android:key="nitrogen_recents_category"
+            android:title="@string/recents_category_options_title"
+            android:fragment="com.android.settings.nitrogen.RecentsSettings"
+            android:icon="@drawable/ic_settings_recents"/>
+
         <!-- Misc -->
         <PreferenceScreen
             android:key="nitrogen_misc_category"
