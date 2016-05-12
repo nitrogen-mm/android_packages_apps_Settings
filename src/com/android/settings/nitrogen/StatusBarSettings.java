@@ -33,14 +33,11 @@ import java.util.ArrayList;
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String KEY_LOCK_CLOCK = "lock_clock";
-    private static final String KEY_LOCK_CLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
     private static final String CUSTOM_HEADER_IMAGE = "status_bar_custom_header";
     private static final String DAYLIGHT_HEADER_PACK = "daylight_header_pack";
     private static final String DEFAULT_HEADER_PACKAGE = "com.android.systemui";
     private static final String CUSTOM_HEADER_IMAGE_SHADOW = "status_bar_custom_header_shadow";
 
-    private PreferenceScreen mLockClock;
     private SwitchPreference mCustomHeaderImage;
     private ListPreference mDaylightHeaderPack;
     private SeekBarPreference mHeaderShadow;
@@ -52,12 +49,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.nitrogen_settings_statusbar);
 
         PreferenceScreen prefSet = getPreferenceScreen();
-
-        // mLockClock 
-        mLockClock = (PreferenceScreen) findPreference(KEY_LOCK_CLOCK);
-        if (!Utils.isPackageInstalled(getActivity(), KEY_LOCK_CLOCK_PACKAGE_NAME)) {
-            prefSet.removePreference(mLockClock);
-        }
 
         // HeaderImagePack
         final boolean customHeaderImage = Settings.System.getInt(getContentResolver(),
