@@ -788,6 +788,7 @@
     <string name="timeout_1500">1,5 секунды</string>
     <string name="timeout_1000">1 секунда</string>
     <string name="timeout_500">0,5 секунды</string>
+    <string name="timeout_350">0,35 секунды</string>
 
     <!-- Doze pulse options -->
     <string name="summary_doze_enabled">Включено</string>

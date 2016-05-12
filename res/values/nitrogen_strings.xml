@@ -821,6 +821,7 @@
     <string name="timeout_1500">1,5 seconds</string>
     <string name="timeout_1000">1 second</string>
     <string name="timeout_500">0,5 second</string>
+    <string name="timeout_350">0,35 second</string>
 
     <!-- Doze pulse options -->
     <string name="summary_doze_enabled">Enabled</string>
