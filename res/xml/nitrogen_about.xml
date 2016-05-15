@@ -91,6 +91,11 @@
             android:title="@string/nos_thanks16"
             android:summary="@string/nos_dev4_m">
         </Preference>
+		
+        <Preference
+            android:title="@string/nos_thanks17"
+            android:summary="@string/nos_dev4_m">
+        </Preference>
     </PreferenceCategory>
 
     <!-- Donate -->
@@ -252,6 +257,13 @@
                 android:data="https://github.com/rashevskyv"/>
         </PreferenceScreen>
 
+        <PreferenceScreen
+            android:title="@string/nos_thanks17"
+            android:summary="@string/nos_thanks_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/ilmirkin"/>
+        </PreferenceScreen>
     </PreferenceCategory>
 
 </PreferenceScreen>
