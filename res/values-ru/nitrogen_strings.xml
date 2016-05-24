@@ -31,7 +31,7 @@
     <string name="changelog_title">Список изменений</string>
     <string name="changelog_summary">С момента последнего обновления</string>
     <string name="changelog_error">Не удается загрузить список изменений</string>
-    
+
     <!-- OTA Updates -->
     <string name="nosupdate_settings_title">Обновления Nitrogen OS</string>
 
@@ -47,7 +47,7 @@
     <string name="nitrogen_menu_personalizaton">Опции Nitrogen OS</string>
     <string name="nitrogen_menu_about">О Nitrogen OS</string>
     <string name="status_bar_screen_title">Строка состояния</string>
-    <string name="navigation_bar_screen_title">Навигационный бар</string>
+    <string name="navigation_bar_screen_title">Панель навигации</string>
     <string name="gestures_title">Жесты</string>
     <string name="lockscreen_title">Экран блокировки</string>
     <string name="power_menu_title">Меню питания</string>
@@ -61,7 +61,7 @@
 
     <!-- Nitrogen OS categories -->
     <string name="display_category_batteryclock_options_title">Опции батареи и часов</string>
-    <string name="display_category_dtts_title">Двойное нажатие для сна</string>
+    <string name="display_category_dtts_title">Спящий режим</string>
     <string name="display_category_navbar_options_title">Опции панели навигации</string>
     <string name="display_category_lockscreen_options_title">Опции экрана блокировки</string>
     <string name="display_category_statusbar_options_title">Опции строки состояния</string>
@@ -82,23 +82,23 @@
     <string name="show_dev_already_enabled">Настройки для разработчика активированы по умолчанию.</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Навигационный бар</string>
-    <string name="double_tap_sleep_nav_bar_summary">Двойное нажатие по навигационному бару для сна</string>
+    <string name="double_tap_sleep_nav_bar_title">Панель навигации</string>
+    <string name="double_tap_sleep_nav_bar_summary">Дважды нажмите по панели навигации для перевода устройства в спящий режим</string>
 
     <!-- kill app long press back -->
     <string name="kill_app_longpress_back">Закрыть приложение</string>
-    <string name="kill_app_longpress_back_summary">Закрыть приложение долгим нажатием на кнопку «Назад»</string>
+    <string name="kill_app_longpress_back_summary">Закрыть приложение удержанием кнопки «Назад»</string>
 
     <!-- Volume rocker wake -->
     <string name="volume_rocker_wake_title">Пробуждение кнопками громкости</string>
-    <string name="volume_rocker_wake_summary">Вывести устройство из сна нажатием кнопок громкости</string>
+    <string name="volume_rocker_wake_summary">Вывести устройство из спящего режима нажатием кнопок громкости</string>
 
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Стиль батареи</string>
     <string name="status_bar_battery_style_icon_portrait">Вертикальная иконка</string>
     <string name="status_bar_battery_style_icon_landscape">Горизонтальная иконка</string>
     <string name="status_bar_battery_style_circle">Круг</string>
-    <string name="status_bar_battery_style_dotted_circle">Точечный круг</string>
+    <string name="status_bar_battery_style_dotted_circle">Пунктирный круг</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_style_hidden">Скрыта</string>
 
@@ -116,12 +116,12 @@
 
     <!-- Three finger screenshot gesture -->
     <string name="three_finger_gesture">Жест тремя пальцами</string>
-    <string name="three_finger_gesture_summary">Проведите тремя пальцами для создания скриншота</string>
+    <string name="three_finger_gesture_summary">Проведите тремя пальцами сверху вниз для создания скриншота</string>
 
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Опции пробуждения</string>
     <string name="wakeup_when_plugged_unplugged_title">Пробуждение при зарядке</string>
-    <string name="wakeup_when_plugged_unplugged_summary">Пробудить устройство при подключении/отключении зарядного устройства.</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Пробуждать устройство при подключении/отключении зарядного устройства.</string>
 
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Поворот экрана</string>
@@ -176,7 +176,7 @@
 
     <!-- Double tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Строка состояния</string>
-    <string name="double_tap_to_sleep_summary">Двойное нажатие по строке состояния приведёт ко сну устройства</string>
+    <string name="double_tap_to_sleep_summary">Дважды нажмите по строке состояния для перевода устройства в спящий режим</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Выбор цвета</string>
@@ -263,7 +263,7 @@
 
     <!-- Weather in status bar -->
     <string name="status_bar_show_weather_title">Сведения о погоде</string>
-    <string name="status_bar_show_weather_summary">Показывать погоду над панелью быстрых настроек</string>
+    <string name="status_bar_show_weather_summary">Отображать погоду в заголовке панели быстрых настроек</string>
 
      <!--- Lock clock -->
     <string name="lock_clock_title">Виджет часов</string>
@@ -359,11 +359,11 @@
     <string name="force_expanded_notifications_summary">Принудительное развертывание уведомлений для всех приложений, которые это поддерживают</string>
 
     <!-- Disabling immersive mode messages -->
-    <string name="disable_immersive_message_title">Сообщения в Immersive mode</string>
-    <string name="disable_immersive_message_summary">Не показывать сообщения в Immersive mode</string>
+    <string name="disable_immersive_message_title">Сообщения в режиме погружения</string>
+    <string name="disable_immersive_message_summary">Не показывать сообщения в режиме погружения</string>
 
     <!-- Disabling FC notifications -->
-    <string name="disable_fc_notifications_title">Отключить FC уведомления</string>
+    <string name="disable_fc_notifications_title">Отключить сообщения об ошибках</string>
     <string name="disable_fc_notifications_summary">Это скроет все уведомления о принудительном закрытии</string>
 
     <!-- About device screen, CPU and RAM info. -->
@@ -496,7 +496,7 @@
     <string name="show_carrier_disabled">Выключено</string>
     <string name="show_carrier_keyguard">На экране блокировки</string>
     <string name="show_carrier_statusbar">В строке состояния</string>
-    <string name="show_carrier_enabled">На экране блокировки &amp; в строке состояния</string>
+    <string name="show_carrier_enabled">На экране блокировки и в строке состояния</string>
     <string name="status_bar_carrier_size">Размер шрифта</string>
 
     <!-- Immersive Recents -->
@@ -722,10 +722,10 @@
     <string name="increasing_ring_ramp_up_time_title">Время увеличения</string>
 
     <string name="double_tap_to_sleep_lockscreen_title">Экран блокировки</string>
-    <string name="double_tap_to_sleep_lockscreen_summary">Двойное нажатие в нижней части экрана блокировки для сна</string>
+    <string name="double_tap_to_sleep_lockscreen_summary">Дважды нажмите в нижней части экрана блокировки для перевода устройства в спящий режим</string>
 
     <!-- QS Tiles Columns -->
-    <string name="qs_num_columns_title">Число плиток в ряду</string>
+    <string name="qs_num_columns_title">Количество плиток в ряду</string>
     <string name="qs_num_columns_showing">%1$s в ряду</string>
     <string name="three_column">Три</string>
     <string name="four_column">Четыре</string>
