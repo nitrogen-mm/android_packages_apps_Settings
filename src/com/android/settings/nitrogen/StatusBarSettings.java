@@ -85,7 +85,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mHeaderShadow = (SeekBarPreference) findPreference(CUSTOM_HEADER_IMAGE_SHADOW);
         final int headerShadow = Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, 0);
-        mHeaderShadow.setValue((int)((headerShadow / 255) * 100));
+        mHeaderShadow.setValue(headerShadow);
         mHeaderShadow.setOnPreferenceChangeListener(this);
     }
 
@@ -112,9 +112,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             return true;
          } else if (preference == mHeaderShadow) {
             Integer headerShadow = (Integer) objValue;
-            int realHeaderValue = (int) (((double) headerShadow / 100) * 255);
             Settings.System.putInt(getContentResolver(),
-                    Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, realHeaderValue);
+                    Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, headerShadow);
             return true;
         }
         return false;
