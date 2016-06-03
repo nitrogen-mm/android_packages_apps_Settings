@@ -469,10 +469,6 @@
     <string name="adb_notify">Уведомление об отладке</string>
     <string name="adb_notify_summary">Показывать уведомление о включенном режиме отладки по USB или по сети</string>
 
-    <!-- Media ducking -->
-    <string name="interruptions_ignore_while_media_title">Не приглушать звук</string>
-    <string name="interruptions_ignore_while_media_summary">Не снижать громкость воспроизведения мультимедиа при получении уведомлений</string>
-
     <!-- Menu label for reset the battery stats -->
     <string name="menu_stats_reset">Сброс статистики</string>
     <string name="reset_stats_msg">История использования батареи будет удалена</string>
@@ -706,11 +702,6 @@
     <!-- Volume button orientation based on current rotation -->
     <string name="swap_volume_buttons_title">Автоповорот</string>
     <string name="swap_volume_buttons_summary">Менять назначение кнопок регулировки громкости согласно ориентации экрана</string>
-
-    <!-- Less Notification sounds -->
-    <string name="less_notification_sounds_title">Ограничить частоту уведомлений</string>
-    <string name="less_notification_sounds_never">Никогда</string>
-    <string name="less_notification_sounds_settings">"Каждые %1$s секунд"</string>
 
     <!-- Quick Settings edit icon -->
     <string name="quick_settings_edit_icon_title">Кнопка быстрого редактирования</string>

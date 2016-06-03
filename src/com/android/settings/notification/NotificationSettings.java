@@ -58,7 +58,6 @@ import android.util.Log;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.DropDownPreference;
-import com.android.settings.notification.SettingPref;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -91,7 +90,6 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private static final String KEY_ZEN_MODE = "zen_mode";
     private static final String KEY_NOTIFICATION_LIGHT = "notification_light";
     private static final String KEY_BATTERY_LIGHT = "battery_light";
-    private static final String KEY_LESS_NOTIFICATION_SOUNDS = "less_notification_sounds";
     private static final String KEY_INCREASING_RING_VOLUME = "increasing_ring_volume";
 
     private static final String[] RESTRICTED_KEYS = {
@@ -128,7 +126,6 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private AudioManager mAudioManager;
     private VolumeSeekBarPreference mRingPreference;
     private VolumeSeekBarPreference mNotificationPreference;
-    private SettingPref mAnnoyingNotifications;
 
     private TwoStatePreference mIncreasingRing;
     private IncreasingRingVolumePreference mIncreasingRingVolume;
@@ -206,22 +203,6 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
 
         mNotificationAccess = findPreference(KEY_NOTIFICATION_ACCESS);
         mZenAccess = findPreference(KEY_ZEN_ACCESS);
-
-        mAnnoyingNotifications = new SettingPref(SettingPref.TYPE_SYSTEM,
-                KEY_LESS_NOTIFICATION_SOUNDS,
-                System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD,
-                0, /*default*/
-                getResources().getIntArray(R.array.less_notification_sounds_values)) {
-            @Override
-            protected String getCaption(Resources res, int value) {
-                if (value > 0 ) {
-                    return res.getString(R.string.less_notification_sounds_settings,
-                                         String.valueOf(value / 1000));
-                }
-                return res.getString(R.string.less_notification_sounds_never);
-            }
-        };
-        mAnnoyingNotifications.init(this);
     }
 
     @Override

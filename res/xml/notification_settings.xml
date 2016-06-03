@@ -78,12 +78,6 @@
                 android:title="@string/volume_steps_title"
                 android:fragment="com.android.settings.nitrogen.VolumeSteps" />
 
-        <!-- Less Notification sounds -->
-        <com.android.settings.DropDownPreference
-                android:key="less_notification_sounds"
-                android:title="@string/less_notification_sounds_title"
-                android:persistent="false" />
-
         <!-- Interruptions -->
         <PreferenceScreen
                 android:key="zen_mode"
@@ -125,13 +119,6 @@
     <PreferenceCategory
         android:key="notification"
         android:title="@string/notification_section_header" >
-
-        <!-- Audio ducking -->
-        <com.android.settings.nitrogen.SecureSettingSwitchPreference
-                android:key="zen_disable_ducking_during_media_playback"
-                android:title="@string/interruptions_ignore_while_media_title"
-                android:summary="@string/interruptions_ignore_while_media_summary"
-                android:defaultValue="false" />
 
         <!-- Pulse notification light -->
         <PreferenceScreen

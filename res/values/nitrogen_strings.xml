@@ -495,10 +495,6 @@
     <string name="adb_notify">USB debugging notify</string>
     <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
 
-    <!-- Media ducking -->
-    <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
-    <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
-
     <!-- Menu label for reset the battery stats -->
     <string name="menu_stats_reset">Reset stats</string>
     <!-- Reset stats confirmation dialog's message -->
@@ -740,11 +736,6 @@
     <!-- Volume button orientation based on current rotation -->
     <string name="swap_volume_buttons_title">Swap volume rocker orientation</string>
     <string name="swap_volume_buttons_summary">Adjust the rocker orientation based on current rotation</string>
-
-    <!-- Less Notification sounds -->
-    <string name="less_notification_sounds_title">Limit notification frequency</string>
-    <string name="less_notification_sounds_never">Never</string>
-    <string name="less_notification_sounds_settings">"Every %1$s seconds"</string>
 
     <!-- Quick Settings edit icon -->
     <string name="quick_settings_edit_icon_title">QS edit icon</string>

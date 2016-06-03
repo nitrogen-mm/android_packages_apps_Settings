@@ -541,16 +541,6 @@
         <item>3</item>
     </string-array>
 
-    <!-- Less Notification sounds -->
-    <integer-array name="less_notification_sounds_values" translatable="false">
-        <item>0</item>
-        <item>5000</item>
-        <item>10000</item>
-        <item>15000</item>
-        <item>30000</item>
-        <item>45000</item>
-    </integer-array>
-
     <!-- QS Tiles Columns -->
     <string-array name="qs_num_columns_values" translatable="false">
         <item>3</item>
