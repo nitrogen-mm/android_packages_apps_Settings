@@ -96,7 +96,10 @@
     <string name="supersu_title">SuperSU</string>
 
     <!-- BitSyko Layers -->
-    <string name="bitsyko_layers">Layers</string>
+    <string name="bitsyko_layers">Layers Manager</string>
+
+    <!--Substratum dashboard strings-->
+    <string name="substratum_title">Substratum</string>
 
     <!-- Kernel Auditor -->
     <string name="kernel_auditor">Kernel Auditor</string>

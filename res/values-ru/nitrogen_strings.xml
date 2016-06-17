@@ -73,7 +73,10 @@
     <string name="supersu_title">Режим суперпользователя</string>
 
     <!-- BitSyko Layers -->
-    <string name="bitsyko_layers">Слои</string>
+    <string name="bitsyko_layers">Менеджер слоёв</string>
+
+    <!--Substratum dashboard strings-->
+    <string name="substratum_title">Темы Substratum</string>
 
     <!-- Kernel Auditor -->
     <string name="kernel_auditor">Настройка ядра</string>
