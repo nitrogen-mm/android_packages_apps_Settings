@@ -22,6 +22,12 @@
             android:summaryOff="@string/summary_heads_up_disabled"
             android:defaultValue="true" />
 
+    <com.android.settings.nitrogen.SecureSettingSwitchPreference
+            android:key="floating_headsup"
+            android:title="@string/floating_heads_up_notifications"
+            android:summary="@string/summary_floating_heads_up"
+            android:defaultValue="false" />
+
     <ListPreference
             android:key="heads_up_snooze_length_ms"
             android:title="@string/heads_up_snooze"

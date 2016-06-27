@@ -840,4 +840,8 @@
 
     <!-- Volume settings - Volume adjustment sound -->
     <string name="volume_adjust_sounds_title">Звук при регулировке громкости</string>
+
+    <!-- Floating peeking notifications -->
+    <string name="floating_heads_up_notifications">Всплывающие окна</string>
+    <string name="summary_floating_heads_up">Разрешить запуск приложения во всплывающем окне при нажатии на уведомление</string>
 </resources>
