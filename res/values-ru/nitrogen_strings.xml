@@ -83,7 +83,7 @@
 
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Панель навигации</string>
-    <string name="double_tap_sleep_nav_bar_summary">Дважды нажмите по панели навигации для перевода устройства в спящий режим</string>
+    <string name="double_tap_sleep_nav_bar_summary">Дважды коснитесь панели навигации для перевода устройства в спящий режим</string>
 
     <!-- kill app long press back -->
     <string name="kill_app_longpress_back">Закрыть приложение</string>
@@ -176,7 +176,7 @@
 
     <!-- Double tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Строка состояния</string>
-    <string name="double_tap_to_sleep_summary">Дважды нажмите по строке состояния для перевода устройства в спящий режим</string>
+    <string name="double_tap_to_sleep_summary">Дважды коснитесь строки состояния для перевода устройства в спящий режим</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Выбор цвета</string>
@@ -346,8 +346,8 @@
     <string name="battery_saver_color_summary">Окрасить строку состояния и панель навигации в оранжевый, когда активирован режим энергосбережения</string>
 
     <!-- Quick Settings haptic feedback -->
-    <string name="quick_settings_vibrate_title">Вибрировать при нажатии</string>
-    <string name="quick_settings_vibrate_summary">Вибрация при нажатии на плитку</string>
+    <string name="quick_settings_vibrate_title">Вибрация при касании</string>
+    <string name="quick_settings_vibrate_summary">Вибрировать при касании плитки</string>
 
     <!-- QuickSettings main tiles -->
     <string name="qs_main_tiles_title">Увеличить первый ряд</string>
@@ -588,7 +588,7 @@
 
     <!-- Lockscreen see through -->
     <string name="lockscreen_see_through_title">Прозрачный экран</string>
-    <string name="lockscreen_see_through_summary">Отображение содержимого за экраном блокировки</string>
+    <string name="lockscreen_see_through_summary">Отображать содержимое позади экрана блокировки</string>
     <string name="lockscreen_blur_radius">Интенсивность размытия</string>
 
     <!-- Volume Steps -->
@@ -713,7 +713,7 @@
     <string name="increasing_ring_ramp_up_time_title">Время увеличения</string>
 
     <string name="double_tap_to_sleep_lockscreen_title">Экран блокировки</string>
-    <string name="double_tap_to_sleep_lockscreen_summary">Дважды нажмите в нижней части экрана блокировки для перевода устройства в спящий режим</string>
+    <string name="double_tap_to_sleep_lockscreen_summary">Дважды коснитесь нижней части экрана блокировки для перевода устройства в спящий режим</string>
 
     <!-- QS Tiles Columns -->
     <string name="qs_num_columns_title">Количество плиток в ряду</string>
