@@ -844,4 +844,8 @@
     <!-- Floating peeking notifications -->
     <string name="floating_heads_up_notifications">Всплывающие окна</string>
     <string name="summary_floating_heads_up">Разрешить запуск приложения во всплывающем окне при нажатии на уведомление</string>
+
+    <!-- Quick Settings brightness icon -->
+    <string name="brightness_icon_title">Значок яркости</string>
+    <string name="brightness_icon_summary">Показать значок включения авто-яркости слева от регулятора</string>
 </resources>

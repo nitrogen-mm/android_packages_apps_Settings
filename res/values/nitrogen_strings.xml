@@ -878,4 +878,8 @@
     <!-- Floating peeking notifications -->
     <string name="floating_heads_up_notifications">Allow floating from peek</string>
     <string name="summary_floating_heads_up">Open app in floating window when peeking notification is tapped</string>
+
+    <!-- Quick Settings brightness icon -->
+    <string name="brightness_icon_title">Brightness icon</string>
+    <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
 </resources>
