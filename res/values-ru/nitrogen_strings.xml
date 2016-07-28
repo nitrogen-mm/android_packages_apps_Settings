@@ -72,9 +72,6 @@
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">Режим суперпользователя</string>
 
-    <!-- BitSyko Layers -->
-    <string name="bitsyko_layers">Менеджер слоёв</string>
-
     <!--Substratum dashboard strings-->
     <string name="substratum_title">Темы Substratum</string>
 
