@@ -70,6 +70,7 @@ public final class BluetoothSettings extends DeviceListPreferenceFragment implem
     private static final int MENU_ID_RENAME_DEVICE = Menu.FIRST + 1;
     private static final int MENU_ID_SHOW_RECEIVED = Menu.FIRST + 2;
     private static final int MENU_ID_ACCEPT_ALL_FILES = Menu.FIRST + 3;
+    private static final int MENU_ID_BLUETOOTH_BATTERY = Menu.FIRST + 4;
 
     /* Private intent to show the list of received files */
     private static final String BTOPP_ACTION_OPEN_RECEIVED_FILES =
@@ -211,6 +212,9 @@ public final class BluetoothSettings extends DeviceListPreferenceFragment implem
         boolean isAcceptAllFilesEnabled = Settings.System.getInt(getContentResolver(),
                 Settings.System.BLUETOOTH_ACCEPT_ALL_FILES, 0) == 1;
 
+        boolean isBluetoothBatteryEnabled = Settings.System.getInt(getContentResolver(),
+                Settings.System.BLUETOOTH_SHOW_BATTERY, 0) == 1;
+
         menu.add(Menu.NONE, MENU_ID_SCAN, 0, textId)
                 .setEnabled(bluetoothIsEnabled && !isDiscovering)
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
@@ -222,6 +226,10 @@ public final class BluetoothSettings extends DeviceListPreferenceFragment implem
         menu.add(Menu.NONE, MENU_ID_ACCEPT_ALL_FILES, 0, R.string.bluetooth_accept_all_files)
                 .setCheckable(true)
                 .setChecked(isAcceptAllFilesEnabled)
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+        menu.add(Menu.NONE, MENU_ID_BLUETOOTH_BATTERY, 0, R.string.bluetooth_battery_title)
+                .setCheckable(true)
+                .setChecked(isBluetoothBatteryEnabled)
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
         super.onCreateOptionsMenu(menu, inflater);
     }
@@ -252,6 +260,13 @@ public final class BluetoothSettings extends DeviceListPreferenceFragment implem
                 item.setChecked(!item.isChecked());
                 Settings.System.putInt(getContentResolver(),
                         Settings.System.BLUETOOTH_ACCEPT_ALL_FILES,
+                        item.isChecked() ? 1 : 0);
+                return true;
+
+            case MENU_ID_BLUETOOTH_BATTERY:
+                item.setChecked(!item.isChecked());
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.BLUETOOTH_SHOW_BATTERY,
                         item.isChecked() ? 1 : 0);
                 return true;
         }

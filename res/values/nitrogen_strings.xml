@@ -892,4 +892,7 @@
     <string name="filter_substratum_apps">Substratum overlays</string>
     <string name="menu_show_substratum">Show overlays</string>
     <string name="menu_hide_substratum">Hide overlays</string>
+
+    <!-- Bluetooth battery -->
+    <string name="bluetooth_battery_title">Device battery level</string>
 </resources>

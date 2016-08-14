@@ -858,4 +858,7 @@
     <string name="filter_substratum_apps">Оверлеи Substratum</string>
     <string name="menu_show_substratum">Показать оверлеи</string>
     <string name="menu_hide_substratum">Скрыть оверлеи</string>
+
+    <!-- Bluetooth battery -->
+    <string name="bluetooth_battery_title">Уровень заряда устройства</string>
 </resources>
